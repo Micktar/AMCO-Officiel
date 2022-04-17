@@ -11118,5 +11118,40 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+html {
+  width: 100%;
+  font-size: 11px;
+}
+
+/* Navbar*/
+#logo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#navbar_content {
+  padding: 10px;
+}
+#navbar_content a:active {
+  color: red;
+  background: #ebe6bc;
+}
+#navbar_content li {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+#btn_navbar > .navbar-toggler {
+  color: red;
+  border-color: yellow;
+  border-radius: 10px;
+}
+
+.nav-item {
+  box-shadow: -0.2em 0 0.5em #a6a778;
+  margin-top: 0.2em;
+}
+
+#Nav > .container > .row {
+  margin: auto;
+}
 
 /*# sourceMappingURL=style.css.map */

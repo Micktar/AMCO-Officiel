@@ -1,1 +1,42 @@
 @use '..//style/node_modules/bootstrap/scss/bootstrap.scss';
+
+
+html {
+  width: 100%;;
+  font-size: 11px;
+}
+
+/* Navbar*/
+
+#logo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navbar_content {
+  padding: 10px;
+
+  a:active {
+    color: red;
+    background: rgb(235, 230, 188);
+  }
+
+  li {
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+}
+
+#btn_navbar > .navbar-toggler {
+  color: red;
+  border-color: yellow;
+  border-radius: 10px;
+}
+
+.nav-item {
+  box-shadow: -0.2em 0 .5em rgb(166, 167, 120);
+  margin-top: 0.2em;
+}
+
+#Nav > .container > .row {
+  margin: auto;
+}
+
