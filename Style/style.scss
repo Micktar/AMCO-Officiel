@@ -174,3 +174,22 @@ section > .event > .description > div > div > .card > .card-body {
   }
 }
 
+/*progress bar*/
+
+.progress_bar {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 5px;
+  background: lightgreen;
+  border: 1px solid rgb(180, 171, 171);
+
+  h5 {
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .progress {
+    margin-bottom: 5px;
+  }
+}
