@@ -182,6 +182,7 @@ section > .event > .description > div > div > .card > .card-body {
   padding: 5px;
   background: lightgreen;
   border: 1px solid rgb(180, 171, 171);
+  font-weight: bold;
 
   h5 {
     font-size: 9px;
@@ -191,5 +192,6 @@ section > .event > .description > div > div > .card > .card-body {
 
   .progress {
     margin-bottom: 5px;
+    text-align: center;
   }
 }
