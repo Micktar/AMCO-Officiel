@@ -1,17 +1,158 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @use '..//style/node_modules/bootstrap/scss/bootstrap.scss';
- *   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   Style\style.scss 1:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use '..//style/node_modules/bootstrap/scss/bootstrap.scss';\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Style\\style.scss 1:1  root stylesheet";
+@charset "UTF-8";
+html {
+  width: 100%;
+  font-size: 11px;
 }
+
+/* Navbar*/
+#logo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#navbar_content {
+  padding: 10px;
+}
+#navbar_content a:active {
+  color: red;
+  background: #ebe6bc;
+}
+#navbar_content li {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+#btn_navbar > .navbar-toggler {
+  color: red;
+  border-color: yellow;
+  border-radius: 10px;
+}
+
+.nav-item {
+  box-shadow: -0.2em 0 0.5em #a6a778;
+  margin-top: 0.2em;
+}
+
+#Nav > .container > .row {
+  margin: auto;
+}
+
+/* Footer */
+.footer {
+  font-size: 8px;
+  background: black;
+  color: white;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+#copyright {
+  font-size: 6px;
+  font-style: oblique;
+}
+
+/*Home*/
+h1 {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+section > .accueil > article {
+  border: 2px solid #5c5a5a;
+  border-radius: 10px;
+  padding: 2px;
+}
+section > .accueil > article div .card {
+  border-radius: 0 0 10px 10px;
+}
+section > .accueil > article .card-title {
+  font-weight: bold;
+  background: #eeecec;
+  box-shadow: 0em 0 0.8em #828606;
+}
+
+.card > .card-header {
+  background: #e0e0cc;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.new_year > div .card-body > p {
+  font-family: "Gloria Hallelujah";
+  font-size: 12px;
+}
+
+.article_event > div .card-header {
+  color: #fc8702;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.general_information > div .adhésion {
+  text-decoration: underline;
+}
+
+/*event*/
+section > .event > .description > div > div > .card > .card-body {
+  font-size: 9px;
+}
+section > .event > .description > div > div > .card > .card-body .btn {
+  font-size: 9px;
+  width: 100px;
+  font-weight: 700;
+}
+
+.modal-body form > div > label {
+  font-weight: bold;
+  font-size: 9px;
+}
+.modal-body .form-check {
+  font-size: 9px;
+}
+
+::placeholder {
+  font-size: 8px;
+}
+
+.modal-footer > .btn {
+  font-size: 9px;
+}
+
+.modal > .modal-dialog {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal > .modal-dialog h5 {
+  font-weight: bold;
+  text-align: center;
+}
+
+/*table of officials participants*/
+.participation {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 0px;
+}
+.participation h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#table_participation {
+  font-size: 9px;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+#table_participation thead > tr > th {
+  padding: 5px;
+  text-decoration: underline;
+}
+#table_participation tbody > tr > th, #table_participation td {
+  padding: 5px;
+  vertical-align: middle;
+}
+#table_participation td > .btn {
+  font-size: 8px;
+}
+
+/*# sourceMappingURL=style.css.map */
