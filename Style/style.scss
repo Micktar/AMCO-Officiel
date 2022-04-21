@@ -70,7 +70,7 @@ section > .accueil > article  {
   padding: 2px;
   
   div .card {
-  border-radius: 10px ;
+  border-radius: 0 0 10px 10px;
   }
 
   .card-title {
@@ -99,5 +99,47 @@ section > .accueil > article  {
 
 .general_information > div .adhésion {
   text-decoration: underline;
-  
+}
+
+
+/*event*/
+
+section > .event > .description > div > div > .card > .card-body {
+  font-size: 9px;
+
+  .btn {
+    font-size: 9px;
+    width: 100px;
+    font-weight: 700;
+  }
+}
+
+.modal-body {
+  form > div > label {
+    font-weight: bold;
+    font-size: 9px;
+  }
+
+  .form-check {
+    font-size: 9px;
+  }
+}
+
+::placeholder {
+  font-size: 8px;
+}
+
+.modal-footer > .btn {
+  font-size: 9px;
+}
+
+.modal > .modal-dialog {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+
+  h5 {
+    font-weight: bold;
+    text-align: center;
+  }
 }

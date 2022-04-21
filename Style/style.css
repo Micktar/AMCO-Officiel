@@ -11181,7 +11181,7 @@ section > .accueil > article {
   padding: 2px;
 }
 section > .accueil > article div .card {
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
 }
 section > .accueil > article .card-title {
   font-weight: bold;
@@ -11208,6 +11208,42 @@ section > .accueil > article .card-title {
 
 .general_information > div .adhésion {
   text-decoration: underline;
+}
+
+/*event*/
+section > .event > .description > div > div > .card > .card-body {
+  font-size: 9px;
+}
+section > .event > .description > div > div > .card > .card-body .btn {
+  font-size: 9px;
+  width: 100px;
+  font-weight: 700;
+}
+
+.modal-body form > div > label {
+  font-weight: bold;
+  font-size: 9px;
+}
+.modal-body .form-check {
+  font-size: 9px;
+}
+
+::placeholder {
+  font-size: 8px;
+}
+
+.modal-footer > .btn {
+  font-size: 9px;
+}
+
+.modal > .modal-dialog {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal > .modal-dialog h5 {
+  font-weight: bold;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
