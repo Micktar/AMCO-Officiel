@@ -62,7 +62,7 @@ section > .accueil > article {
   padding: 2px;
 }
 section > .accueil > article div .card {
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
 }
 section > .accueil > article .card-title {
   font-weight: bold;
@@ -89,6 +89,89 @@ section > .accueil > article .card-title {
 
 .general_information > div .adhésion {
   text-decoration: underline;
+}
+
+/*event*/
+section > .event > .description > div > div > .card > .card-body {
+  font-size: 9px;
+}
+section > .event > .description > div > div > .card > .card-body .btn {
+  font-size: 9px;
+  width: 100px;
+  font-weight: 700;
+}
+
+.modal-body form > div > label {
+  font-weight: bold;
+  font-size: 9px;
+}
+.modal-body .form-check {
+  font-size: 9px;
+}
+
+::placeholder {
+  font-size: 8px;
+}
+
+.modal-footer > .btn {
+  font-size: 9px;
+}
+
+.modal > .modal-dialog {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal > .modal-dialog h5 {
+  font-weight: bold;
+  text-align: center;
+}
+
+/*table of officials participants*/
+.participation {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 0px;
+}
+.participation h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#table_participation {
+  font-size: 9px;
+  margin-bottom: 0.2em;
+  text-align: center;
+}
+#table_participation thead > tr > th {
+  padding: 5px;
+  text-decoration: underline;
+}
+#table_participation tbody > tr > th, #table_participation td {
+  padding: 5px;
+  vertical-align: middle;
+}
+#table_participation td > .btn {
+  font-size: 8px;
+}
+
+/*progress bar*/
+.progress_bar {
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 5px;
+  background: lightgreen;
+  border: 1px solid #b4abab;
+  font-weight: bold;
+}
+.progress_bar h5 {
+  font-size: 9px;
+  font-weight: bold;
+  text-align: center;
+}
+.progress_bar .progress {
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
