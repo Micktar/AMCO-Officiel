@@ -175,5 +175,28 @@ section > .event > .description > div > div > .card > .card-body .btn {
 }
 
 /*le club*/
+section > .club > article > div .card-body {
+  text-align: justify;
+}
+
+.statuts_club > .row > .col > .card ul > li {
+  background: lightgray;
+  border: 1px solid black;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 5px;
+}
+.statuts_club > .row > .col > .card ul > li h5 {
+  font-size: 1.2em;
+  color: #00b7ff;
+  font-weight: bold;
+  font-style: oblique;
+  text-decoration: underline;
+  text-align: center;
+}
+.statuts_club > .row > .col > .card ul > li p {
+  font-size: 13px;
+  padding-left: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */
