@@ -179,6 +179,10 @@ section > .club > article > div .card-body {
   text-align: justify;
 }
 
+.statuts_club > div .card > .card-header {
+  font-size: 1.5em;
+}
+
 .statuts_club > .row > .col > .card ul > li {
   background: lightgray;
   border: 1px solid black;
