@@ -212,4 +212,10 @@ section > .photos > p {
   margin-bottom: 150px;
 }
 
+/* Archives*/
+/*2011-2015*/
+.archives_2011-2015 > article > div .card-body > ul {
+  padding-left: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
