@@ -4,6 +4,12 @@ html {
   font-size: 11px;
 }
 
+h1 {
+  background: #d1cccc;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 /* Navbar*/
 #logo {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -220,17 +226,31 @@ section > .photos > p {
 
 /*contact*/
 #home {
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .needs-validation {
   background: rgba(202, 174, 174, 0.747);
   text-align: center;
   width: 300px;
-  height: 450px;
+  height: 460px;
   margin: auto;
   border: 2px solid black;
   border-style: dotted;
+}
+
+.contact_page .btn {
+  margin-top: 10px;
+}
+.contact_page label {
+  font-weight: 700;
+  font-style: oblique;
+  padding-top: 3px;
+}
+
+#condition_accept {
+  font-size: 9px;
+  padding-left: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
