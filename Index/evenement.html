@@ -11,296 +11,307 @@
   <title>Amicale Motos Cyclos Occitanie</title>
   <meta name="description" content="Retrouvez tous les évènements organisés par les membres de l'équipe de l'Amicale Motos Cyclos Occitanie. Une association de Moto-cross et Vélo basée dans l'Ariège"/>
 </head>
-<header>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="Nav">
-    <div class="container">
-      <div class="row">
-        <div class="col pt-1">
-          <a class="navbar-brand text-warning" id="logo">Menu de Navigation</a>
+<body>
+  <div class="container px-0">
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="Nav">
+        <div class="row no-gutters m-auto ">
+          <div class="col">
+            <a class="navbar-brand text-warning" id="logo">Menu de Navigation</a>
+          </div>
+          <div class="col" id="btn_navbar">
+            <button class="navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#navbar_content" aria-controls="navbar_content"      aria-expanded="false" aria-label="Toggle navigation" id="button">
+              <span class="navbar-toggler-icon btn-sm"></span>
+            </button>
+          </div>
         </div>
-        <div class="col" id="btn_navbar">
-          <button class="navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#navbar_content" aria-controls="navbar_content"      aria-expanded="false" aria-label="Toggle navigation" id="button">
-            <span class="navbar-toggler-icon btn-sm"></span>
-          </button>
+        <div class="collapse navbar-collapse pt-2" id="navbar_content">
+            <ul class="navbar-nav nav-fill ">
+              <li class="nav-item">
+                <a class="nav-link active disabled text-warning" aria-current="page" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+                  </svg> Accueil</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Index/evenement.html"> 
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3-event text-success" viewBox="0 0 16 16">
+                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                    <path d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                  </svg> Evènements</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Index/club.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bicycle " viewBox="0 0 16 16">
+                    <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.303z"/>
+                  </svg> Le club</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Index/photos.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
+                    <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                    <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.030l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
+                  </svg> Photos</a></li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
+                  <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                  </svg> Archives</a>
+                  <ul class="dropdown-menu bg-dark pt-0" id="dropdown_archives">
+                    <li><a class="dropdown-item bg-dark text-white text-center" href="/Index/Archives/2016-2018.html">2016 - 2018</a></li>
+                    <li><a class="dropdown-item bg-dark text-white text-center" href="/Index/Archives/2011-2015.html">2011 - 2015</a></li>
+                  </ul>
+              </li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="event my-2">
+        <h1 class="text-center">Evènements du club</h1>
+        <div class="wrapper mx-1">
+          <article>
+            <div class="flex">
+              <div class="d-flex flex flex-column">
+                <div class="row no-gutters"> <!--event description-->
+                  <div class="col">
+                    <section class="description">
+                      <div class="card">
+                        <div class="card-header text-center"><b><u>Juillet 2025</u></b></div>
+                        <img src="/Annexe/Images/Motocross.jpg" class="img-fluid pt-1" alt="img-course">
+                        <div class="card-body mt-2 pt-2">
+                          <h5 class="card-title text-muted text-decoration-underline text-center">Course d'endurance & Barbecue</h5>
+                          <p class="card-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                            </svg> Arize sur l'Hers
+                          </p>
+                          <p class="card-text">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
+                            <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                            </svg> 14 & 15 Juillet 2025
+                          </p>
+                          <p class="card-text">
+                            Le club organise une course d'endurance en relais et se continuera lors d'une soirée  autour d'un barbecue <br> 
+                            <b><u class="text-danger">nous avons également besoin de bénévole pour nous aidez à encadrer cet évènement</u></b>
+                          </p>
+                          <p class="card-text"> pour tout renseignement :
+                            <a href="mailto:john.doe@AMCO.com">john.doe@AMCO.com</a>
+                          </p>
+                          <div class="btn_participation">
+                            <div class="float-left">
+                              <button class="btn btn_left btn-warning" data-toggle="modal" data-target="#join_bénévole" type="button">Je participe à  l'encadrement</button>
+                            </div>
+                            <div class="float-right">
+                              <button class="btn btn_right btn-success" data-toggle="modal" data-target="#join_pilote" type="button">Je participe en tant que Pilote</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Management participation modal-->
+                      <div class="modal fade" id="join_bénévole" tabindex="-1" role="dialog" aria-labelledby="join_modal_label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="join_modal_label"> Participer à l'évènement en tant que Bénévole</h5>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-group">
+                                  <label for="name">Nom</label>
+                                  <input type="text" class="form-control" id="name" name="name" placeholder="Dupont">
+                                </div>
+                                <div class="form-group">
+                                  <label for="surname">Prénom</label>
+                                  <input type="text" class="form-control" id="surname" name="surname" placeholder="François">
+                                </div>
+                                <div class="form-group">
+                                  <label for="mail" class="form-label">Adresse e-mail</label>
+                                  <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control" id="mail" aria-describedby="inputGroupPrepend" requiredplaceholder="françois_dupont@moto.fr">
+                                    <div class="invalid-feedback">
+                                      Veuillez rentrer une adresse mail valide
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="message">Message</label>
+                                <textarea class="form-control" name="message" id="message" rows="2"></textarea>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal" id="abort">Fermer</button>
+                            <button type="button" class="btn btn-success" id="validation">Participer</button>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                      <!-- Pilote participation modal -->
+                      <div class="modal fade" id="join_pilote" tabindex="-1" role="dialog" aria-labelledby="join_modal_label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="join_modal_label"> Participer à l'évènement en tant que Pilote</h5>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="form-group">
+                                  <label for="name">Nom</label>
+                                  <input type="text" class="form-control" id="name" name="name" placeholder="Dupont">
+                                </div>
+                                <div class="form-group">
+                                  <label for="surname">Prénom</label>
+                                  <input type="text" class="form-control" id="surname" name="surname" placeholder="François">
+                                </div>
+                                <div class="form-group">
+                                  <label for="mail" class="form-label">Adresse e-mail</label>
+                                  <div class="input-group has-validation">
+                                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                    <input type="text" class="form-control" id="mail" aria-describedby="inputGroupPrepend" required   placeholder="françois_dupont@moto.fr">
+                                    <div class="invalid-feedback">
+                                      Veuillez rentrer une adresse mail valide
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea class="form-control" name="message" id="message" rows="2"></textarea>
+                                </div>
+                              </form>
+                              <div class="form-check form-check-inline" id="pilote">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox50" value="50cc">
+                                <label class="form-check-label" for="inlineCheckbox50">50cc</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox125" value="125cc">
+                                <label class="form-check-label" for="inlineCheckbox125">125cc</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox250" value="250-450cc">
+                                <label class="form-check-label" for="inlineCheckbox250">250-450cc</label>
+                              </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-dismiss="modal" id="abort">Fermer</button>
+                              <button type="button" class="btn btn-success" id="validation">Participer</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="row no-gutters mt-2"><!--table of officials participants-->
+                  <div class="col">
+                    <section class="participation  px-1">
+                      <h5 class="text-center pt-2">Participants officiel</h5>
+                      <table class="table" id="table_participation">
+                        <thead class="thead-light">
+                          <tr>
+                            <th scope="col" >Nom</th>
+                            <th scope="col">Fonction</th>
+                            <th scope="col">Club</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Justine</th>
+                            <td>Commissaire de piste</td>
+                            <td>AMCO</td>
+                            <td><button class="btn btn-sm btn-info"><a class="text-light" href="mailto:justine.val@amco.com">Contacter</a></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Patrice</th>
+                            <td>Gérant buvette</td>
+                            <td>LAQUILLE</td>
+                            <td><button class="btn btn-sm btn-info"><a class="text-light" href="mailto:patrice.org@la_quille.com">Contacter</a></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Franck</th>
+                            <td>Gestion des billets</td>
+                            <td>AMCO</td>
+                            <td><button class="btn btn-sm btn-info"><a class="text-light" href="mailto:franck.suz@amco.com">Contacter</a></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Marc</th>
+                            <td>Organisateur du parking</td>
+                            <td>P.F.C</td>
+                            <td><button class="btn btn-sm btn-info"><a class="text-light" href="mailto:marc.le_fort@pfc.com">Contacter</a></button></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Julie</th>
+                            <td>Sécurité</td>
+                            <td>P.F.C</td>
+                            <td><button class="btn btn-sm btn-info"><a class="text-light" href="mailto:julie.soiz@pfc.com">Contacter</a></button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </section>
+                  </div>
+                </div>
+                <div class="row no-gutters mt-2"> <!-- progress bar event participation-->
+                  <div class="col">
+                    <section class="progress_bar">
+                      <h5>Nombres de personnes qui participe à l'évènements</h5>
+                      <div class="progress" id="bénévoles">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 63%" aria-valuenow="190" aria-valuemin="0"  aria-valuemax="300">190 / 300 Bénévoles
+                        </div>
+                      </div>
+                      <div class="progress" id="50cc">
+                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 66%" aria-valuenow="40" aria-valuemin="0"  aria-valuemax="100">40 / 60 Pilotes : 50cc
+                        </div>
+                      </div>
+                      <div class="progress" id="125cc">
+                        <div class="progress-bar progress-bar-striped bg-warning text-dark" role="progressbar" style="width: 83%" aria-valuenow="40" aria-valuemin="0"  aria-valuemax="60"> 50 / 60 Pilotes : 125cc
+                        </div>
+                      </div>
+                      <div class="progress" id="250cc">
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 66%" aria-valuenow="50" aria-valuemin="0"  aria-valuemax="60"> 45 / 60 Pilotes : 250cc / 450cc
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
-      <div class="collapse navbar-collapse justify-content-center" id="navbar_content">
-        <ul class="navbar-nav nav-fill ">
-          <li class="nav-item">
-            <a class="nav-link" href="/Index/accueil.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
-              </svg> Accueil</a></li>
-          <li class="nav-item">
-            <a class="nav-link active disabled text-warning" aria-current="page" href="#"> 
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3-event text-success" viewBox="0 0 16 16">
-                <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
-                <path d="M12 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-              </svg> Evènements</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Index/club.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bicycle " viewBox="0 0 16 16">
-                <path d="M4 4.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1v.5h4.14l.386-1.158A.5.5 0 0 1 11 4h1a.5.5 0 0 1 0 1h-.64l-.311.935.807 1.29a3 3 0 1 1-.848.53l-.508-.812-2.076 3.322A.5.5 0 0 1 8 10.5H5.959a3 3 0 1 1-1.815-3.274L5 5.856V5h-.5a.5.5 0 0 1-.5-.5zm1.5 2.443-.508.814c.5.444.85 1.054.967 1.743h1.139L5.5 6.943zM8 9.057 9.598 6.5H6.402L8 9.057zM4.937 9.5a1.997 1.997 0 0 0-.487-.877l-.548.877h1.035zM3.603 8.092A2 2 0 1 0 4.937 10.5H3a.5.5 0 0 1-.424-.765l1.027-1.643zm7.947.53a2 2 0 1 0 .848-.53l1.026 1.643a.5.5 0 1 1-.848.53L11.55 8.303z"/>
-              </svg> Le club</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="/Index/photos.html">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-images" viewBox="0 0 16 16">
-                <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-                <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.030l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z"/>
-              </svg> Photos</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
-              <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
-              </svg> Archives</a>
-              <ul class="dropdown-menu bg-dark mt-1" id="dropdown_archives">
-                <li><a class="dropdown-item bg-dark text-white text-center" href="/Index/Archives/2016-2018.html">2016 - 2018</a></li>
-                <li><a class="dropdown-item bg-dark text-white text-center" href="/Index/Archives/2011-2015.html">2011 - 2015</a></li>
-              </ul>
-          </li>
-        </ul>
+    </main>
+  </div>
+  <footer class="footer bg-dark text-light mt-auto ">
+    <div class="container pt-2">
+      <div class="row justify-content-center">
+        <div class="col-6">
+          <div class="contact text-center">
+            <span>Retrouvez-nous sur :</span>
+            <a href="https://www.facebook.com/AMCO-Amicale-Moto-Cyclo-Occitanie-106697515109895 " target="blank"><img src="/Annexe/Images/Icone/Facebook.png"width="16" height="16">
+            </a> 
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form_contact text-center">
+            <span>Pour tout contact :</span>
+            <a href="/Index/contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle text-danger" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+            </svg>
+            </a> 
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center pt-3">
+        <div class="col-12 text-center" id="copyright">
+          <p class="mb-1">Copyright @ <script>document.write(new Date().getFullYear());</script> by Micktar. Tous droits réservés.</p>
+        </div>
       </div>
     </div>
-  </nav>
-</header>
-<body>
-  <main>
-    <section>
-      <div class="event mx-1">
-        <h1 class="text-center my-3">Evènements du club</h1>        
-        <article class="description">
-          <div class="row mx-1">
-            <div class="col px-0">
-              <div class="card ">
-          <div class="card-header text-center"><b><u>Juillet 2025</u></b></div>
-          <img src="/Annexe/Images/Motocross.jpg" class="img-fluid px-1 pt-1" alt="img-course">
-          <div class="card-body mt-2 pt-2">
-            <h5 class="card-title text-muted text-decoration-underline text-center">Course d'endurance & Barbecue</h5>
-            <p class="card-text">
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-              </svg> Arize sur l'Hers
-            </p>
-            <p class="card-text">
-              <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
-                <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
-                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-              </svg> 14 & 15 Juillet 2025
-            </p>
-            <p class="card-text">
-              Le club organise une course d'endurance en relais et se continuera lors d'une soirée  autour d'un barbecue <br> 
-              <b><u class="text-danger">nous avons également besoin de bénévole pour nous aidez à encadrer cet évènement</u></b>
-            </p>
-            <p class="card-text"> pour tout renseignement :
-              <a href="mailto:john.doe@AMCO.com">john.doe@AMCO.com</a>
-           </p>
-           <div class="btn_participation">
-             <div class="float-left">
-               <button class="btn btn_left btn-warning" data-toggle="modal" data-target="#join_bénévole" type="button">Je participe à l'encadrement</button>
-             </div>
-             <div class="float-right">
-               <button class="btn btn_right btn-success" data-toggle="modal" data-target="#join_pilote" type="button">Je participe en tant que Pilote</button>
-             </div>
-           </div>
-          </div>
-        </div>
-            </div>
-          </div>
-        <!-- Management participation modal-->
-          <div class="modal fade" id="join_bénévole" tabindex="-1" role="dialog" aria-labelledby="join_modal_label" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="join_modal_label"> Participer à l'évènement en tant que Bénévole</h5>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="name">Nom</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Dupont">
-                  </div>
-                  <div class="form-group">
-                    <label for="surname">Prénom</label>
-                    <input type="text" class="form-control" id="surname" name="surname" placeholder="François">
-                  </div>
-                  <div class="form-group">
-                    <label for="mail" class="form-label">Adresse e-mail</label>
-                    <div class="input-group has-validation">
-                      <span class="input-group-text" id="inputGroupPrepend">@</span>
-                      <input type="text" class="form-control" id="mail" aria-describedby="inputGroupPrepend" required placeholder="françois_dupont@moto.fr">
-                      <div class="invalid-feedback">
-                        Veuillez rentrer une adresse mail valide
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" name="message" id="message" rows="2"></textarea>
-                  </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal" id="abort">Fermer</button>
-                <button type="button" class="btn btn-success" id="validation">Participer</button>
-              </div>
-            </div>
-          </div>
-          </div>
-        <!-- Pilote participation modal -->
-          <div class="modal fade" id="join_pilote" tabindex="-1" role="dialog" aria-labelledby="join_modal_label" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="join_modal_label"> Participer à l'évènement en tant que Pilote</h5>
-              </div>
-              <div class="modal-body">
-                <form>
-                  <div class="form-group">
-                    <label for="name">Nom</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Dupont">
-                  </div>
-                  <div class="form-group">
-                    <label for="surname">Prénom</label>
-                    <input type="text" class="form-control" id="surname" name="surname" placeholder="François">
-                  </div>
-                  <div class="form-group">
-                    <label for="mail" class="form-label">Adresse e-mail</label>
-                    <div class="input-group has-validation">
-                      <span class="input-group-text" id="inputGroupPrepend">@</span>
-                      <input type="text" class="form-control" id="mail" aria-describedby="inputGroupPrepend" required placeholder="françois_dupont@moto.fr">
-                      <div class="invalid-feedback">
-                        Veuillez rentrer une adresse mail valide
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" name="message" id="message" rows="2"></textarea>
-                  </div>
-                </form>
-                <div class="form-check form-check-inline" id="pilote">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox50" value="50cc">
-                  <label class="form-check-label" for="inlineCheckbox50">50cc</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox125" value="125cc">
-                  <label class="form-check-label" for="inlineCheckbox125">125cc</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox250" value="250-450cc">
-                  <label class="form-check-label" for="inlineCheckbox250">250-450cc</label>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-dismiss="modal" id="abort">Fermer</button>
-                <button type="button" class="btn btn-success" id="validation">Participer</button>
-              </div>
-            </div>
-          </div>
-          </div>
-        </article>
-        <article class="participation my-3"><!--table of officials participants-->
-          <h5 class="text-center pt-2">Participants officiel</h5>
-          <table class="table" id="table_participation">
-            <thead class="thead-light">
-              <tr>
-                <th scope="col" >Nom</th>
-                <th scope="col">Fonction</th>
-                <th scope="col">Club</th>
-                <th scope="col">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Justine</th>
-                <td>Commissaire de piste</td>
-                <td>AMCO</td>
-                <td><button class="btn btn-sm btn-info"><a class="text-light" href="mailto:justine.val@amco.com">Contacter</a></button></td>
-              </tr>
-              <tr>
-                <th scope="row">Patrice</th>
-                <td>Gérant buvette</td>
-                <td>LAQUILLE</td>
-                <td><button class="btn btn-sm btn-info"><a class="text-light" href="mailto:patrice.org@la_quille.com">Contacter</a></button></td>
-              </tr>
-              <tr>
-                <th scope="row">Franck</th>
-                <td>Gestion des billets</td>
-                <td>AMCO</td>
-                <td><button class="btn btn-sm btn-info"><a class="text-light" href="mailto:franck.suz@amco.com">Contacter</a></button></td>
-              </tr>
-              <tr>
-                <th scope="row">Marc</th>
-                <td>Organisateur du parking</td>
-                <td>P.F.C</td>
-                <td><button class="btn btn-sm btn-info"><a class="text-light" href="mailto:marc.le_fort@pfc.com">Contacter</a></button></td>
-              </tr>
-              <tr>
-                <th scope="row">Julie</th>
-                <td>Sécurité</td>
-                <td>P.F.C</td>
-                <td><button class="btn btn-sm btn-info"><a class="text-light" href="mailto:julie.soiz@pfc.com">Contacter</a></button></td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
-        <article class="progress_bar"> <!-- progress bar event participation-->
-          <h5>Nombres de personnes qui participe à l'évènements</h5>
-          <div class="progress" id="bénévoles">
-            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 63%" aria-valuenow="190" aria-valuemin="0"  aria-valuemax="300">190 / 300 Bénévoles
-            </div>
-          </div>
-          <div class="progress" id="50cc">
-            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 66%" aria-valuenow="40" aria-valuemin="0"  aria-valuemax="100">40 / 60 Pilotes : 50cc
-            </div>
-          </div>
-          <div class="progress" id="125cc">
-            <div class="progress-bar progress-bar-striped bg-warning text-dark" role="progressbar" style="width: 83%" aria-valuenow="40" aria-valuemin="0"  aria-valuemax="60"> 50 / 60 Pilotes : 125cc
-            </div>
-          </div>
-          <div class="progress" id="250cc">
-            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 66%" aria-valuenow="50" aria-valuemin="0"  aria-valuemax="60"> 45 / 60 Pilotes : 250cc / 450cc
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="footer">
-        <div class="container text-center">
-          <div class="row py-3">
-            <div class="col">
-              <div class="contact">
-                <span>Retrouvez-nous sur :</span>
-                <a href="https://www.facebook.com/AMCO-Amicale-Moto-Cyclo-Occitanie-106697515109895 " target="blank"><img src="/Annexe/Images/Icone/Facebook.png"width="16" height="16">
-                </a> 
-              </div>
-            </div>
-            <div class="col">
-              <div class="form_contact">
-                <span>Pour tout contact :</span>
-                <a href="/Index/contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle text-danger" viewBox="0 0 16 16">
-                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                  <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-                </svg>
-                </a> 
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col " id="copyright">
-              <p>Copyright @ <script>document.write(new Date().getFullYear());</script> by Micktar. Tous droits réservés.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-  </main>
-
-
-
-
-
+  </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
+
+

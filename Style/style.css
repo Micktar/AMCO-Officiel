@@ -1,11 +1,19 @@
 @charset "UTF-8";
+/*
+CONTROLER LE CSS CONCERNANT LE FOOTER
+VERIFIER LE BON FCTIONNEMENT DES DIFFERENTES SECTIONS
+*/
 html {
-  width: 100%;
   font-size: 11px;
+}
+
+html, body {
+  height: 100%;
 }
 
 h1 {
   background: #d1cccc;
+  font-family: "Gloria Hallelujah", cursive;
   padding-top: 5px;
   padding-bottom: 5px;
 }
@@ -16,7 +24,7 @@ h1 {
 }
 
 #navbar_content {
-  padding: 10px;
+  /*padding: 10px;*/
 }
 #navbar_content a:active {
   color: red;
@@ -37,47 +45,38 @@ h1 {
   margin-top: 0.2em;
 }
 
+/*
 #Nav > .container > .row {
   margin: auto;
 }
-
+*/
 /* Footer */
-.footer {
-  font-size: 8px;
-  background: black;
-  color: white;
+footer {
   font-weight: 600;
-  width: 100%;
-  height: 100%;
-  margin-top: 20px;
 }
 
 #copyright {
-  font-size: 6px;
+  font-size: 8px;
   font-style: oblique;
 }
 
 /*Home*/
-h1 {
-  font-family: "Gloria Hallelujah", cursive;
-}
-
-section > .accueil > article {
+.accueil > article {
   border: 2px solid #5c5a5a;
   border-radius: 10px;
   padding: 2px;
 }
-section > .accueil > article div .card {
-  border-radius: 0 0 10px 10px;
+.accueil > article div .card {
+  border-radius: 10px;
 }
-section > .accueil > article .card-title {
+.accueil > article .card-title {
   font-weight: bold;
   background: #eeecec;
   box-shadow: 0em 0 0.8em #828606;
 }
-
-.card > .card-header {
+.accueil > article .card > .card-header {
   background: #e0e0cc;
+  border-radius: 10px 10px 0 0;
   font-weight: bold;
   font-size: 13px;
 }
@@ -98,20 +97,20 @@ section > .accueil > article .card-title {
 }
 
 /*event*/
-section > .event > .description > div > div > .card > .card-body {
+.event > .description > div > div > .card > .card-body {
   font-size: 9px;
 }
-section > .event > .description > div > div > .card > .card-body .btn {
+.event > .description > div > div > .card > .card-body .btn {
   font-size: 9px;
   width: 100px;
   font-weight: 700;
 }
 
-.modal-body form > div > label {
+.event form > div > label {
   font-weight: bold;
   font-size: 9px;
 }
-.modal-body .form-check {
+.event .form-check {
   font-size: 9px;
 }
 
@@ -119,25 +118,24 @@ section > .event > .description > div > div > .card > .card-body .btn {
   font-size: 8px;
 }
 
-.modal-footer > .btn {
-  font-size: 9px;
-}
-
-.modal > .modal-dialog {
+.modal .modal-dialog {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
-.modal > .modal-dialog h5 {
+.modal h5 {
   font-weight: bold;
   text-align: center;
+}
+.modal .modal-footer > .btn {
+  font-size: 9px;
 }
 
 /*table of officials participants*/
 .participation {
   border: 1px solid black;
-  margin: 5px;
-  padding: 0px;
+  /*margin: 5px;
+  padding: 0px;*/
 }
 .participation h5 {
   font-size: 16px;
@@ -163,10 +161,8 @@ section > .event > .description > div > div > .card > .card-body .btn {
 
 /*progress bar*/
 .progress_bar {
-  margin-right: 10px;
-  margin-left: 10px;
   padding: 5px;
-  background: lightgreen;
+  background: #cfeecf;
   border: 1px solid #b4abab;
   font-weight: bold;
 }
@@ -176,7 +172,7 @@ section > .event > .description > div > div > .card > .card-body .btn {
   text-align: center;
 }
 .progress_bar .progress {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -192,8 +188,6 @@ section > .club > article > div .card-body {
 .statuts_club > .row > .col > .card ul > li {
   background: lightgray;
   border: 1px solid black;
-  margin-left: 1.5em;
-  margin-right: 1.5em;
   margin-bottom: 5px;
 }
 .statuts_club > .row > .col > .card ul > li h5 {
@@ -233,7 +227,7 @@ section > .photos > p {
   background: rgba(202, 174, 174, 0.747);
   text-align: center;
   width: 300px;
-  height: 460px;
+  height: 470px;
   margin: auto;
   border: 2px solid black;
   border-style: dotted;
