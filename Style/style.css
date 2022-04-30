@@ -3,6 +3,7 @@
 CONTROLER LE CSS CONCERNANT LE FOOTER
 VERIFIER LE BON FCTIONNEMENT DES DIFFERENTES SECTIONS
 */
+/*GENERAL*/
 html {
   font-size: 11px;
 }
@@ -14,8 +15,19 @@ html, body {
 h1 {
   background: #d1cccc;
   font-family: "Gloria Hallelujah", cursive;
+  text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.card .card-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+}
+.card h5 {
+  text-align: center;
+  font-weight: bold;
 }
 
 /* Navbar*/
@@ -61,39 +73,40 @@ footer {
 }
 
 /*Home*/
-.accueil > article {
+.accueil > .wrapper > article > .row > .col > section {
   border: 2px solid #5c5a5a;
   border-radius: 10px;
-  padding: 2px;
+  padding: 5px;
+  background: rgba(255, 251, 0, 0.267);
 }
-.accueil > article div .card {
+.accueil > .wrapper > article > .row > .col > section .card {
   border-radius: 10px;
+  text-align: center;
 }
-.accueil > article .card-title {
+.accueil > .wrapper > article > .row > .col > section .card-title {
   font-weight: bold;
   background: #eeecec;
   box-shadow: 0em 0 0.8em #828606;
 }
-.accueil > article .card > .card-header {
+.accueil > .wrapper > article > .row > .col > section .card-header {
   background: #e0e0cc;
   border-radius: 10px 10px 0 0;
   font-weight: bold;
   font-size: 13px;
 }
 
-.new_year > div .card-body > p {
+.accueil > .wrapper > article > .row > .col .new_year > .card > .card-body > p {
   font-family: "Gloria Hallelujah";
   font-size: 12px;
 }
-
-.article_event > div .card-header {
+.accueil > .wrapper > article > .row > .col .event_article > div .card-header {
   color: #fc8702;
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
 }
-
-.general_information > div .adhésion {
+.accueil > .wrapper > article > .row > .col .general_information > .card > .card-body > p > .adhésion {
   text-decoration: underline;
+  font-size: 12px;
 }
 
 /*event*/
@@ -204,7 +217,7 @@ section > .club > article > div .card-body {
 }
 
 /* photos */
-section > .photos > p {
+.pictures > div section > p {
   font-size: 30px;
   border: 2px solid black;
   background: lightgray;

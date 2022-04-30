@@ -3,6 +3,9 @@ CONTROLER LE CSS CONCERNANT LE FOOTER
 VERIFIER LE BON FCTIONNEMENT DES DIFFERENTES SECTIONS
 */
 
+
+
+/*GENERAL*/
 html {
   font-size: 11px;
 }
@@ -15,9 +18,28 @@ html, body {
 h1 {
   background: rgb(209, 204, 204);
   font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
   padding-top: 5px;
   padding-bottom: 5px; 
 }
+
+
+.card {
+
+  .card-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+  }
+
+  h5 {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+
+
 
 /* Navbar*/
 
@@ -65,46 +87,51 @@ footer {
   font-style: oblique;
 }
 
-
 /*Home*/
 
-.accueil > article  {
+.accueil > .wrapper > article > .row > .col > section {
   border: 2px solid rgb(92, 90, 90);
   border-radius: 10px;
-  padding: 2px;
+  padding: 5px;
+  background: rgba(255, 251, 0, 0.267);
   
-  div .card {
+  .card {
   border-radius: 10px;
+  text-align: center;
   }
 
   .card-title {
     font-weight: bold;
     background: rgb(238, 236, 236);
-    box-shadow: -0em 0 .8em rgb(130, 134, 6);
+    box-shadow: -0em 0 .8em rgb(130, 134, 6);    
   }
 
-  .card > .card-header {
+  .card-header {
     background: rgb(224, 224, 204);
     border-radius: 10px 10px 0 0 ;
     font-weight: bold;
     font-size: 13px;
   }
+
+}
+
+.accueil > .wrapper > article > .row > .col {
+
+  .new_year > .card > .card-body > p {
+    font-family: 'Gloria Hallelujah';
+    font-size: 12px;
+  }
+
+  .event_article > div .card-header {
+    color: rgb(252, 135, 2);
+    font-size: 18px;
+    font-weight: bold;
+  }
   
-}
-
-.new_year > div .card-body > p {
-  font-family: 'Gloria Hallelujah';
-  font-size: 12px;
-}
-
-.article_event > div .card-header {
-  color: rgb(252, 135, 2);
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.general_information > div .adhésion {
-  text-decoration: underline;
+  .general_information > .card > .card-body > p > .adhésion {
+    text-decoration: underline;
+    font-size: 12px;
+  }
 }
 
 
@@ -243,7 +270,7 @@ section > .club > article > div .card-body {
 
 /* photos */ 
 
-section > .photos > p {
+.pictures > div section >  p {
   font-size: 30px;
   border: 2px solid black;
   background: lightgray;
