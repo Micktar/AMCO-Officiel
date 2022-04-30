@@ -69,22 +69,22 @@
           <article>
             <div class="row no-gutters"> <!--event description-->
               <div class="col">
-                <section class="description">
+                <section class="event_description">
                   <div class="card">
-                    <div class="card-header text-center"><b><u>Juillet 2025</u></b></div>
-                    <img src="/Annexe/Images/Motocross.jpg" class="img-fluid pt-1" alt="img-course">
-                    <div class="card-body mt-2 pt-2">
-                      <h5 class="card-title text-muted text-decoration-underline text-center">Course d'endurance & Barbecue</h5>
+                    <div class="card-header"><b><u>Juillet 2025</u></b></div>
+                    <img src="/Annexe/Images/Motocross.jpg" class="img-fluid" alt="img-course">
+                    <div class="card-body pt-1">
+                      <h5 class="card-title text-muted text-decoration-underline ">Course d'endurance & Barbecue</h5>
                       <p class="card-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                           <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                        </svg> Arize sur l'Hers
+                        </svg> <strong>Arize sur l'Hers</strong>
                       </p>
                       <p class="card-text">
                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-calendar-date" viewBox="0 0 16 16">
                         <path d="M6.445 11.688V6.354h-.633A12.6 12.6 0 0 0 4.5 7.16v.695c.375-.257.969-.62 1.258-.777h.012v4.61h.675zm1.188-1.305c.047.64.594 1.406 1.703 1.406 1.258 0 2-1.066 2-2.871 0-1.934-.781-2.668-1.953-2.668-.926 0-1.797.672-1.797 1.809 0 1.16.824 1.77 1.676 1.77.746 0 1.23-.376 1.383-.79h.027c-.004 1.316-.461 2.164-1.305 2.164-.664 0-1.008-.45-1.05-.82h-.684zm2.953-2.317c0 .696-.559 1.18-1.184 1.18-.601 0-1.144-.383-1.144-1.2 0-.823.582-1.21 1.168-1.21.633 0 1.16.398 1.16 1.23z"/>
                         <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-                        </svg> 14 & 15 Juillet 2025
+                        </svg> <strong><u>14 & 15 Juillet 2025</u></strong>
                       </p>
                       <p class="card-text">
                         Le club organise une course d'endurance en relais et se continuera lors d'une soirée  autour d'un barbecue <br> 
@@ -124,7 +124,7 @@
                               <label for="mail" class="form-label">Adresse e-mail</label>
                               <div class="input-group has-validation">
                                 <span class="input-group-text" id="inputGroupPrepend">@</span>
-                                <input type="text" class="form-control" id="mail" aria-describedby="inputGroupPrepend" requiredplaceholder="françois_dupont@moto.fr">
+                                <input type="text" class="form-control" id="mail" aria-describedby="inputGroupPrepend" required placeholder="françois_dupont@moto.fr">
                                 <div class="invalid-feedback">
                                   Veuillez rentrer une adresse mail valide
                                 </div>
@@ -199,12 +199,12 @@
                 </section>
               </div>
             </div>
-            <div class="row no-gutters mt-2"><!--table of officials participants-->
+            <div class="row no-gutters"><!--table of officials participants-->
               <div class="col">
-                <section class="participation  px-1">
-                  <h5 class="text-center pt-2">Participants officiel</h5>
-                  <table class="table" id="table_participation">
-                    <thead class="thead-light">
+                <section class="participation">
+                  <h5>Participants officiel</h5>
+                  <table class="table mb-0" id="table_participation">
+                    <thead class="thead-dark">
                       <tr>
                         <th scope="col" >Nom</th>
                         <th scope="col">Fonction</th>
@@ -248,10 +248,10 @@
                 </section>
               </div>
             </div>
-            <div class="row no-gutters mt-2"> <!-- progress bar event participation-->
+            <div class="row no-gutters"> <!-- progress bar event participation-->
               <div class="col">
                 <section class="progress_bar">
-                  <h5>Nombres de personnes qui participe à l'évènements</h5>
+                  <h5 class="pb-3">Nombres de personnes qui participe à l'évènements</h5>
                   <div class="progress" id="bénévoles">
                     <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 63%" aria-valuenow="190" aria-valuemin="0"  aria-valuemax="300">190 / 300 Bénévoles
                     </div>

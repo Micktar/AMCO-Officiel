@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/*
-CONTROLER LE CSS CONCERNANT LE FOOTER
-VERIFIER LE BON FCTIONNEMENT DES DIFFERENTES SECTIONS
-*/
 /*GENERAL*/
 html {
   font-size: 11px;
@@ -29,15 +25,15 @@ h1 {
   text-align: center;
   font-weight: bold;
 }
+.card .card-footer {
+  text-align: center;
+}
 
 /* Navbar*/
 #logo {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#navbar_content {
-  /*padding: 10px;*/
-}
 #navbar_content a:active {
   color: red;
   background: #ebe6bc;
@@ -57,11 +53,6 @@ h1 {
   margin-top: 0.2em;
 }
 
-/*
-#Nav > .container > .row {
-  margin: auto;
-}
-*/
 /* Footer */
 footer {
   font-weight: 600;
@@ -73,47 +64,43 @@ footer {
 }
 
 /*Home*/
-.accueil > .wrapper > article > .row > .col > section {
+section {
+  margin-top: 5px;
   border: 2px solid #5c5a5a;
   border-radius: 10px;
-  padding: 5px;
   background: rgba(255, 251, 0, 0.267);
+  padding: 5px;
 }
+
 .accueil > .wrapper > article > .row > .col > section .card {
   border-radius: 10px;
-  text-align: center;
-}
-.accueil > .wrapper > article > .row > .col > section .card-title {
-  font-weight: bold;
-  background: #eeecec;
-  box-shadow: 0em 0 0.8em #828606;
 }
 .accueil > .wrapper > article > .row > .col > section .card-header {
   background: #e0e0cc;
   border-radius: 10px 10px 0 0;
-  font-weight: bold;
-  font-size: 13px;
 }
-
-.accueil > .wrapper > article > .row > .col .new_year > .card > .card-body > p {
+.accueil > .wrapper > article > .row > .col > section .card-title {
+  background: #eeecec;
+  box-shadow: 0em 0 0.8em #865906;
+}
+.accueil > .wrapper > article > .row > .col > .new_year > .card > .card-body > p {
   font-family: "Gloria Hallelujah";
   font-size: 12px;
 }
-.accueil > .wrapper > article > .row > .col .event_article > div .card-header {
+.accueil > .wrapper > article > .row > .col > .event_article > div .card-header {
   color: #fc8702;
   font-size: 18px;
-  font-weight: bold;
 }
-.accueil > .wrapper > article > .row > .col .general_information > .card > .card-body > p > .adhésion {
+.accueil > .wrapper > article > .row > .col > .general_information > .card > .card-body > p > .adhésion {
   text-decoration: underline;
   font-size: 12px;
 }
 
 /*event*/
-.event > .description > div > div > .card > .card-body {
+.event_description > .card > .card-body {
   font-size: 9px;
 }
-.event > .description > div > div > .card > .card-body .btn {
+.event_description > .card > .card-body .btn {
   font-size: 9px;
   width: 100px;
   font-weight: 700;
@@ -126,84 +113,66 @@ footer {
 .event .form-check {
   font-size: 9px;
 }
-
-::placeholder {
+.event ::placeholder {
   font-size: 8px;
 }
 
-.modal .modal-dialog {
+.event_description > .modal .modal-dialog {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
-.modal h5 {
+.event_description > .modal h5 {
   font-weight: bold;
   text-align: center;
 }
-.modal .modal-footer > .btn {
+.event_description > .modal .modal-footer > .btn {
   font-size: 9px;
 }
 
 /*table of officials participants*/
-.participation {
-  border: 1px solid black;
-  /*margin: 5px;
-  padding: 0px;*/
-}
 .participation h5 {
   font-size: 16px;
   font-weight: bold;
+  text-align: center;
 }
 
 #table_participation {
   font-size: 9px;
-  margin-bottom: 0.2em;
   text-align: center;
 }
 #table_participation thead > tr > th {
-  padding: 5px;
+  padding: 3px;
   text-decoration: underline;
 }
 #table_participation tbody > tr > th, #table_participation td {
-  padding: 5px;
-  vertical-align: middle;
+  padding: 2px;
 }
 #table_participation td > .btn {
-  font-size: 8px;
+  font-size: 9px;
 }
 
 /*progress bar*/
 .progress_bar {
-  padding: 5px;
+  padding: 10px;
   background: #cfeecf;
-  border: 1px solid #b4abab;
-  font-weight: bold;
 }
 .progress_bar h5 {
-  font-size: 9px;
   font-weight: bold;
   text-align: center;
 }
 .progress_bar .progress {
   margin-bottom: 10px;
-  text-align: center;
 }
 
 /*le club*/
-section > .club > article > div .card-body {
-  text-align: justify;
-}
-
-.statuts_club > div .card > .card-header {
-  font-size: 1.5em;
-}
-
-.statuts_club > .row > .col > .card ul > li {
+.statuts_club > .card ul > li {
   background: lightgray;
   border: 1px solid black;
   margin-bottom: 5px;
+  padding: 0px;
 }
-.statuts_club > .row > .col > .card ul > li h5 {
+.statuts_club > .card ul > li h5 {
   font-size: 1.2em;
   color: #00b7ff;
   font-weight: bold;
@@ -211,13 +180,17 @@ section > .club > article > div .card-body {
   text-decoration: underline;
   text-align: center;
 }
-.statuts_club > .row > .col > .card ul > li p {
+.statuts_club > .card ul > li p {
   font-size: 13px;
   padding-left: 5px;
 }
 
 /* photos */
-.pictures > div section > p {
+.pictures section {
+  background: none;
+  border: none;
+}
+.pictures p {
   font-size: 30px;
   border: 2px solid black;
   background: lightgray;
@@ -226,8 +199,7 @@ section > .club > article > div .card-body {
 }
 
 /* Archives*/
-/*2011-2015*/
-.archives_2011-2015 > article > div .card-body > ul {
+.archives > .wrapper > article .card ul {
   padding-left: 10px;
 }
 
