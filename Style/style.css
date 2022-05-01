@@ -1,7 +1,19 @@
 @charset "UTF-8";
+/* for mobile */
+@media screen and (max-width: 575px) {
+  .menu_nav, .second_banniere {
+    display: none;
+  }
+}
+.card .card-header, h5 {
+  text-align: center;
+  font-weight: bold;
+}
+
 /*GENERAL*/
 html {
-  font-size: 11px;
+  font-size: 10px;
+  /* 10 Pixels */
 }
 
 html, body {
@@ -16,14 +28,16 @@ h1 {
   padding-bottom: 5px;
 }
 
-.card .card-header {
-  text-align: center;
-  font-weight: bold;
-  font-size: 13px;
+section {
+  margin-top: 5px;
+  border: 2px solid #5c5a5a;
+  border-radius: 10px;
+  background: rgba(255, 240, 0, 0.4);
+  padding: 2px;
 }
-.card h5 {
-  text-align: center;
-  font-weight: bold;
+
+.card .card-header {
+  font-size: 13px;
 }
 .card .card-footer {
   text-align: center;
@@ -40,66 +54,59 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#navbar_content a:active {
-  color: red;
-  background: #ebe6bc;
+#navbar_content a:hover {
+  color: #ffffff;
+  background: #d3d3d3a8;
 }
 #navbar_content li {
   font-family: "Gloria Hallelujah", cursive;
 }
 
 #btn_navbar > .navbar-toggler {
-  color: red;
-  border-color: yellow;
+  color: #ff0000;
+  border-color: #ffff00;
   border-radius: 10px;
 }
 
 .nav-item {
-  box-shadow: -0.2em 0 0.5em #a6a778;
+  box-shadow: -0.2em 0 0.5em #fcee00;
   margin-top: 0.2em;
 }
 
 /* Footer */
 footer {
-  font-weight: 600;
+  font-weight: bold;
 }
 
 #copyright {
-  font-size: 8px;
+  font-size: 9px;
   font-style: oblique;
 }
 
 /*Home*/
-section {
-  margin-top: 5px;
-  border: 2px solid #5c5a5a;
-  border-radius: 10px;
-  background: rgba(255, 251, 0, 0.267);
-  padding: 5px;
-}
-
-.accueil > .wrapper > article > .row > .col > section .card {
-  border-radius: 10px;
-}
-.accueil > .wrapper > article > .row > .col > section .card-header {
-  background: #e0e0cc;
-  border-radius: 10px 10px 0 0;
-}
-.accueil > .wrapper > article > .row > .col > section .card-title {
-  background: #eeecec;
-  box-shadow: 0em 0 0.8em #865906;
-}
 .accueil > .wrapper > article > .row > .col > .new_year > .card > .card-body > p {
   font-family: "Gloria Hallelujah";
   font-size: 12px;
 }
-.accueil > .wrapper > article > .row > .col > .event_article > div .card-header {
+.accueil > .wrapper > article > .row > .col > .event_article .card-header {
   color: #fc8702;
-  font-size: 18px;
+  font-size: 20px;
 }
-.accueil > .wrapper > article > .row > .col > .general_information > .card > .card-body > p > .adhésion {
+.accueil > .wrapper > article > .row > .col > .general_information .adhésion {
   text-decoration: underline;
   font-size: 12px;
+}
+
+.accueil section .card {
+  border-radius: 10px;
+}
+.accueil section .card-header {
+  background: #e0e0cc;
+  border-radius: 10px 10px 0 0;
+}
+.accueil section .card-title {
+  background: #d3d3d3a8;
+  box-shadow: 0em 0 0.8em #fc8702;
 }
 
 /*event*/
@@ -128,19 +135,13 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
-.event_description > .modal h5 {
-  font-weight: bold;
-  text-align: center;
-}
 .event_description > .modal .modal-footer > .btn {
   font-size: 9px;
 }
 
 /*table of officials participants*/
-.participation h5 {
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
+.participation {
+  background: none;
 }
 
 #table_participation {
@@ -153,6 +154,7 @@ section {
 }
 #table_participation tbody > tr > th, #table_participation td {
   padding: 2px;
+  vertical-align: middle;
 }
 #table_participation td > .btn {
   font-size: 9px;
@@ -163,28 +165,22 @@ section {
   padding: 10px;
   background: #cfeecf;
 }
-.progress_bar h5 {
-  font-weight: bold;
-  text-align: center;
-}
 .progress_bar .progress {
   margin-bottom: 10px;
 }
 
 /*le club*/
 .statuts_club > .card ul > li {
-  background: lightgray;
-  border: 1px solid black;
+  background: #d3d3d3a8;
+  border: 1px solid #000;
   margin-bottom: 5px;
-  padding: 0px;
+  padding: 0;
 }
 .statuts_club > .card ul > li h5 {
-  font-size: 1.2em;
+  font-size: 14px;
   color: #00b7ff;
-  font-weight: bold;
   font-style: oblique;
   text-decoration: underline;
-  text-align: center;
 }
 .statuts_club > .card ul > li p {
   font-size: 13px;
@@ -198,10 +194,9 @@ section {
 }
 .pictures p {
   font-size: 30px;
-  border: 2px solid black;
-  background: lightgray;
+  border: 1px solid #000;
+  background: #d3d3d3a8;
   margin-top: 150px;
-  margin-bottom: 150px;
 }
 
 /* Archives*/
@@ -215,7 +210,7 @@ section {
 }
 
 .needs-validation {
-  background: rgba(202, 174, 174, 0.747);
+  background: #fffee6;
   text-align: center;
   width: 300px;
   height: 470px;
@@ -228,13 +223,13 @@ section {
   margin-top: 10px;
 }
 .contact_page label {
-  font-weight: 700;
+  font-weight: bold;
   font-style: oblique;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 #condition_accept {
-  font-size: 9px;
+  font-size: 10px -1;
   padding-left: 5px;
 }
 

@@ -1,7 +1,33 @@
+@use "mediaQueries.scss";
+
+$red: #ff0000 ;
+$lgray: #d3d3d3a8;
+$gray: #5c5a5a;
+$white: #ffffff;
+$yellow: #ffff00;
+$orange: #fc8702;
+
+$yellow_lighten: lighten(#fff000, 45%);
+$yellow_darker: darken(#fff000, 0.5%);
+$yellow_semi_transparent: fade-out(#fff000, 0.6);
+
+$border_black: 1px solid #000;
+$border_10: 10px;
+
+$mp_auto: auto;
+$m-size: 10px;
+
+$font_bold: bold;
+$txt-center: center;
+%text_bold_center {
+  text-align: center;
+  font-weight: bold;
+}
+
 /*GENERAL*/
 
 html {
-  font-size: 11px;
+  font-size: $m-size; /* 10 Pixels */
 }
 
 html, body {
@@ -11,32 +37,38 @@ html, body {
 h1 {
   background: rgb(209, 204, 204);
   font-family: 'Gloria Hallelujah', cursive;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px; 
+  text-align: $txt-center;
+  padding-top: $m-size /2;  
+  padding-bottom: $m-size /2; 
+}
+
+h5 {
+  @extend %text_bold_center;
+}
+
+section {
+  margin-top: $m-size /2;
+  border: $m-size /5 solid #5c5a5a;
+  border-radius: $border_10;
+  background: $yellow_semi_transparent;
+  padding: $m-size /5;
 }
 
 .card {
   .card-header {
-    text-align: center;
-    font-weight: bold;
-    font-size: 13px;
-  }
-
-  h5 {
-    text-align: center;
-    font-weight: bold;
+    @extend %text_bold_center;
+    font-size: $m-size +3 ;
   }
 
   .card-footer {
-    text-align: center;
+    text-align: $txt-center;
   }
 }
 
 #scroll_to_top {
   position:fixed ;
-  bottom: 50px;
-  right: 5px;
+  bottom: $m-size *5;
+  right: $m-size /2;
 }
 
 
@@ -48,9 +80,9 @@ h1 {
 
 #navbar_content {
 
-  a:active {
-    color: red;
-    background: rgb(235, 230, 188);
+  a:hover {
+    color: $white;
+    background: $lgray;
   }
 
   li {
@@ -59,81 +91,75 @@ h1 {
 }
 
 #btn_navbar > .navbar-toggler {
-  color: red;
-  border-color: yellow;
-  border-radius: 10px;
+  color: $red ;
+  border-color: $yellow;
+  border-radius: $border_10 ;
 }
 
 .nav-item {
-  box-shadow: -0.2em 0 .5em rgb(166, 167, 120);
+  box-shadow: -0.2em 0 .5em $yellow_darker;
   margin-top: 0.2em;
 }
 
 /* Footer */
 
 footer {
-  font-weight: 600;
+  font-weight: $font_bold;
 }
 
 #copyright {
-  font-size: 8px;
+  font-size: $m-size - 1;
   font-style: oblique;
 }
 
 /*Home*/
 
-section {
-  margin-top: 5px;
-  border: 2px solid rgb(92, 90, 90);
-  border-radius: 10px;
-  background: rgba(255, 251, 0, 0.267);
-  padding: 5px;
-}
+
 
 .accueil > .wrapper > article > .row > .col >  {
   
-  section 
-  {  
-    .card {
-      border-radius: 10px;
-      }
-    
-      .card-header {
-        background: rgb(224, 224, 204);
-        border-radius: 10px 10px 0 0 ;
-      }
-    
-      .card-title {
-        background: rgb(238, 236, 236);
-        box-shadow: -0em 0 .8em rgb(134, 89, 6);    
-      }
-
-  }
-
   .new_year > .card > .card-body > p {
     font-family: 'Gloria Hallelujah';
-    font-size: 12px;
+    font-size: $m-size +2;
   }
 
-  .event_article > div .card-header {
-    color: rgb(252, 135, 2);
-    font-size: 18px;
+  .event_article .card-header {
+    color: $orange;
+    font-size: $m-size *2;
   }
   
-  .general_information > .card > .card-body > p > .adhésion {
+  .general_information .adhésion {
     text-decoration: underline;
-    font-size: 12px;
+    font-size: $m-size +2;
   }
   
+}
+
+.accueil section 
+{  
+  .card {
+    border-radius: $border_10;
+    }
+  
+    .card-header {
+      background: rgb(224, 224, 204);
+      border-radius: 10px 10px 0 0 ;
+    }
+  
+    .card-title {
+      background: $lgray;
+      box-shadow: -0em 0 .8em $orange;    
+    }
+
 }
 
 /*event*/
 
 .event_description > .card > .card-body {
-  font-size: 9px;
+  font-size: $m-size - 1;
 
   .btn {
-    font-size: 9px;
+    font-size: $m-size - 1;
     width: 100px;
     font-weight: 700;
   }
@@ -141,16 +167,16 @@ section {
 
 .event {
   form > div > label {
-    font-weight: bold;
-    font-size: 9px;
+    font-weight: $font_bold;
+    font-size: $m-size - 1;
   }
 
   .form-check {
-    font-size: 9px;
+    font-size: $m-size - 1;
   }
 
   ::placeholder {
-    font-size: 8px;
+    font-size: $m-size - 2;
   }
 }
 
@@ -158,17 +184,12 @@ section {
 
   .modal-dialog {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: $mp_auto;
+    margin-right: $mp_auto;
   }
   
-  h5 {
-    font-weight: bold;
-    text-align: center;
-  }
-
   .modal-footer > .btn {
-    font-size: 9px;
+    font-size: $m-size - 1;
   }
 }
 
@@ -176,69 +197,58 @@ section {
 /*table of officials participants*/
 
 .participation {
+  background: none;
   
-  h5 {
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-  }
 }
 
 #table_participation {
-  font-size: 9px;
-  text-align: center;
-  
+  font-size: $m-size - 1;
+  text-align: $txt-center;
   
   thead > tr > th {
     padding: 3px;
-    text-decoration: underline;
+    text-decoration: underline;    
   }
 
   tbody > tr > th, td {
     padding: 2px;
+    vertical-align: middle;
   }
-  
+
   td > .btn {
-    font-size: 9px;
+    font-size: $m-size - 1;
   }
 }
 
 /*progress bar*/
 
 .progress_bar {
-  padding: 10px;
+  padding: $m-size;
   background: rgb(207, 238, 207);
   
-  h5 {
-    font-weight: bold;
-    text-align: center;
-  }
-
   .progress {
-    margin-bottom: 10px;
+    margin-bottom: $m-size;
   }
 }
 
 /*le club*/
 
 .statuts_club > .card ul > li {
-  background: lightgray;
-  border: 1px solid black;
-  margin-bottom: 5px;
-  padding: 0px;
- 
+  background: $lgray;
+  border: $border_black ;
+  margin-bottom: $m-size /2;
+  padding: 0;
+  
   h5 {
-    font-size: 1.2em;
+    font-size: $m-size +4;
     color: rgb(0, 183, 255);
-    font-weight: bold;
     font-style: oblique;
     text-decoration: underline;
-    text-align: center;
   }
 
   p {
-    font-size: 13px;
-    padding-left: 5px;
+    font-size: $m-size +3;
+    padding-left: $m-size /2;
   }
 }
 
@@ -252,52 +262,52 @@ section {
   }
   
   p {
-    font-size: 30px;
-    border: 2px solid black;
-    background: lightgray;
+    font-size: $m-size *3;
+    border: $border_black ;
+    background: $lgray;
     margin-top: 150px;
-    margin-bottom: 150px;
+
   }
 }
 
 /* Archives*/
 
 .archives > .wrapper > article .card ul {
-    padding-left: 10px;   
+    padding-left: $m-size;   
 }
 
 
 /*contact*/
 
 #home {
-  font-size: 20px;
+  font-size: $m-size *2;
 }
 
 .needs-validation {
-  background: rgba(202, 174, 174, 0.747);
-  text-align: center;
+  background: $yellow_lighten;
+  text-align: $txt-center;
   width: 300px;
   height: 470px;
-  margin: auto;
-  border: 2px solid black;
+  margin: $mp_auto;
+  border: $m-size /5 solid black;
   border-style: dotted;
 }
 
 .contact_page {
   .btn {
-    margin-top: 10px;
+    margin-top: $m-size;
   }
 
   label {
-    font-weight: 700;
+    font-weight: $font_bold;
     font-style: oblique;
-    padding-top: 3px;
+    padding-top: $m-size /2 ;
   }
 }
 
 #condition_accept {
-  font-size: 9px;
-  padding-left: 5px;
+  font-size: $m-size -1;
+  padding-left: $m-size /2;
 }
 
 
