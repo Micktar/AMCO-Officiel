@@ -16,8 +16,8 @@
 
 /*Home*/
 .accueil section {  
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 5px;
+  padding-right: 5px;
   
   .card {
     border-radius: 10px;
@@ -121,10 +121,13 @@
 
 @media screen and (min-width: 576px) and (max-width: 1023px) { /* for tablette & landscape */ 
   
-  
-  .card {
-    max-width: 500px;
-    
+  .card .card-header {
+    font-size: 18px ;
+    line-height: 30px; 
+  }
+
+  .event_article .card-header {
+    font-size: 30px;
   }
 
 }

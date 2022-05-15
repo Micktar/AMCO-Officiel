@@ -26,7 +26,7 @@
 
 #scroll_to_top {
   position:fixed;
-  right: 0px;
+  right: 1vw;
   bottom: 200px;
  
   svg {
@@ -38,10 +38,14 @@
 
 @media screen and (min-width: 576px) and (max-width: 1023px) {
   
- /*Contact page*/
+  #scroll_to_top {
+    background: rgb(255, 251, 0);
+    bottom: 100px;
     svg {
       width: 30px;
       height: 30px;
     }
+  }
+  
   
 }

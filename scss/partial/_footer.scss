@@ -1,12 +1,12 @@
 @import "formules.scss";
 
 .footer {
-  position: relative;
+
   font-weight: bold; 
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;  
-  bottom:0;
+
 }
 
 #copyright {
@@ -17,6 +17,9 @@
 
 @media screen and (min-width: 576px) and (max-width: 1023px) { /*for tablette & landscape */
  
+  footer {
+    font-size: $size_13 + 2;   
+  }
 
   #copyright {
   font-size: $size_13 - 2;

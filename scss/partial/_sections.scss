@@ -1,10 +1,15 @@
 @import "formules.scss";
 
+article {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 section {
   margin-top: 10px;
   border: 3px solid #000000;
   border-radius: 10px;
-
   padding: 5px;
 }
 
@@ -54,18 +59,23 @@ section {
 /* PICTURES */ 
 
 .pictures {
+  .wrapper {
+    margin-top: 30vw;   
+  }
   
   section {
+    height: 100%;
     background: none;
     border: none;
   }
   
   p {
     font-size: 30px;
-    border: 1px solid #000 ;
-    color: white;
+ 
+    background: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
-    margin-top: 150px;
+    
   }
 }
 
@@ -73,7 +83,7 @@ section {
 
 /*Form*/
 .needs-validation {
-  background: lighten(#fff000, 45%);
+  background: lighten(#fff000, 30%);
   text-align: center;
   width: 300px;
   height: 470px;
@@ -100,12 +110,44 @@ section {
 /*RESPONSIVE*/
 
 @media screen and (min-width: 576px) and (max-width: 1023px) { /* for tablette & landscape */ 
-  
-  section {
-    margin-bottom: 1vw;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    width: 515px;
+ 
+article {
+  max-width: 600px;
+} 
+
+/*EVENT*/
+
+/*table of officials participants*/
+#table_participation {
+  font-size: 13px;
+
+  thead > tr > th {
+    font-size: 15px;
   }
 
+  td > .btn  a {
+    font-size: 13px;
+  }
+}
+
+/*progress bar*/
+.progress_bar > .progress { 
+    height: 20px;
+}
+
+
+/*CONTACT*/
+
+  .needs-validation {
+    width: 400px;
+    height: 620px;
+    
+    div {
+      padding-top: 10px;
+    }  
+  }
+
+  #condition_accept {
+    font-size: 12px;
+  }
 }

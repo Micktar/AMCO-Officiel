@@ -31,15 +31,12 @@ main {
   html, body {
     font-size: $size_13;
   }
-
-  main {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
- 
- 
-
 }
 
+@media screen and (min-width: 1024px) { /* for desktops */ 
+  
+  html, body {
+    font-size: $size_13;
+    
+  }
+}

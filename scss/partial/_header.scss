@@ -45,29 +45,31 @@
 
 @media screen and (min-width: 576px) and (max-width: 1023px) {
 
-  #navbar_content {
+  #navbar_content { 
+    justify-content: center;
     a:hover {
       color:$white;
       background: $lgray;
     }
 
     .nav-item {
-      margin-left: 10px;
+      margin: 10px;
       width: 17vw;  
-      max-width: 144px;
+      max-width: 130px;
       font-size: 15px; 
-    }      
+    }   
+    #dropdown_archives {
+      width: 17vw;  
+      max-width: 130px;
+    }   
   }
+}
 
-  #dropdown_archives {
-    width: 18vw;
-    font-size: 12px;
-  }
-
-  #scroll_to_top {
-    position:fixed ;
-    bottom: 55px;
-    left: -2px;
+@media screen and (min-width: 1024px) { /* for desktops */ 
+  
+  html, body {
+    
+    
   }
 }
 

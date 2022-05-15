@@ -49,3 +49,22 @@ h5 {
   padding-top: 5px;
 }
 
+
+/*RESPONSIVE*/ 
+
+@media screen and (min-width: 576px) and (max-width: 1023px) { /* for tablette & landscape */ 
+  
+  /*GENERAL*/
+h1 {
+  font-size: 3.5rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+ 
+
+}
