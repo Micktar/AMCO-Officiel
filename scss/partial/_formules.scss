@@ -1,0 +1,25 @@
+$red: #ff0000 ;
+$lgray: #d3d3d3a8;
+$gray: #5c5a5a;
+$white: #ffffff;
+$yellow: #ffff00;
+$orange: #fc8702;
+
+$yellow_lighten: lighten(#fff000, 45%);
+$yellow_darker: darken(#fff000, 0.5%);
+$yellow_semi_transparent: fade-out(#fff000, 0.6);
+
+$size_10: 10px;
+$size_13: 13px;
+
+
+$border_black: 1px solid #000;
+
+%text_bold_center {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+$mp_auto: auto;
+

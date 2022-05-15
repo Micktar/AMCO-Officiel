@@ -4,30 +4,30 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2? family=Gloria+Hallelujah&display=swap" rel="feuille de style">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="/Style/style.css" rel="stylesheet">
+
+
   <title>Amicale Motos Cyclos Occitanie</title>
   <meta name="description" content="cette page traite des différentes informations du club de l'Amicale Motos Cyclos Occitanie. Une association de Moto-cross et Vélo basée dans l'Ariège"/>
 </head>
 <body class="d-flex flex-column">
-  <div class="container px-0">
+  <div class="container-fluid px-0" >
     <header>
+      <div class="second_banniere">
+        <img src="../Annexe/Images/Compo4.jpg" alt="bannière_2" class="img-fluid ">
+      </div>
       <nav class="navbar navbar-expand-sm navbar-dark bg-dark" id="Nav">
-        <div class="row no-gutters m-auto ">
-          <div class="col">
-            <a class="navbar-brand text-warning" id="logo">Menu de Navigation</a>
-          </div>
-          <div class="col" id="btn_navbar">
-            <button class="navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#navbar_content" aria-controls="navbar_content"      aria-expanded="false" aria-label="Toggle navigation" id="button">
-              <span class="navbar-toggler-icon btn-sm"></span>
-            </button>
-          </div>
-        </div>
-        <div class="collapse navbar-collapse pt-2" id="navbar_content">
-            <ul class="navbar-nav nav-fill ">
-              <li class="nav-item">
+        <div class="container justify-content-center">
+          <a class="navbar-brand text-warning" id="logo">Menu de Navigation</a>
+          <button class="navbar-toggler p-2" type="button" data-toggle="collapse" data-target="#navbar_content" aria-controls="navbar_content" aria-expanded="false" aria-label="Toggle navigation" id="button">
+            <span class="navbar-toggler-icon btn-sm"></span>
+          </button>
+          <div class="collapse navbar-collapse py-2" id="navbar_content">
+            <ul class="navbar-nav nav-fill">
+              <li class="nav-item ">
                 <a class="nav-link" href="/Index/accueil.html">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
                     <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
@@ -57,7 +57,7 @@
                   </svg> Photos
                 </a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewBox="0 0 16 16">
                   <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
                   </svg> Archives</a>
@@ -67,6 +67,7 @@
                   </ul>
               </li>
             </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -75,7 +76,8 @@
         <h1>Le club</h1>
         <div class="wrapper mx-1">
           <article>
-            <div class="row no-gutters"> <!--creation club -->
+            <!--creation club -->
+            <div class="row"> 
               <div class="col">
                 <section class="creation_club">
                   <div class="card">
@@ -88,7 +90,8 @@
                 </section>
               </div>
             </div>
-            <div class="row no-gutters"> <!--club modification-->
+            <!--club modification-->
+            <div class="row"> 
               <div class="col">
                 <section class="modif_club">
                   <div class="card">
@@ -105,29 +108,36 @@
                 </section>
               </div>
             </div>
-            <div class="row no-gutters"> <!--statuts of club-->
+            <!--statuts of club-->
+            <div class="row"> 
               <div class="col">
                 <section class="statuts_club">
                   <div class="card">
                     <div class="card-header text-center text-danger">📜 Les statuts du club 📜</div>
-                    <div class="card-body ">
-                      <ul class="list-group mt-2">
-                        <li class="list-group-item"><h5>Président :</h5>
+                    <div class="card-body">
+                      <ul class="list-group ">
+                        <li class="list-group-item mx-auto">
+                          <h5>Président :</h5>
                           <p><b>SAINT-JOLY</b> Jean pierre <a href="mailto:j.pierrejoly@sfr.fr">📧</a></p>
                         </li>
-                        <li class="list-group-item"><h5>Vices Président :</h5>
+                        <li class="list-group-item mx-auto">
+                          <h5>Vices Président :</h5>
                           <p><b>PEREZ</b> Louis <br> & <br> <b>VERGE</b> Gérard </p>
                         </li>
-                        <li class="list-group-item"><h5>Trésorier :</h5>
+                        <li class="list-group-item mx-auto">
+                          <h5>Trésorier :</h5>
                           <p><b>SAINT-JOLY</b> Stéphan <a href="mailto:migdle@hotmail.com">📧</a></p>
                         </li>
-                        <li class="list-group-item"><h5>Secrétaire :</h5>
+                        <li class="list-group-item mx-auto">
+                          <h5>Secrétaire :</h5>
                           <p><b>VERGE</b> Elisabeth</p>
                         </li>
-                        <li class="list-group-item"><h5>Conseillers Technique :</h5>
+                        <li class="list-group-item mx-auto">
+                          <h5>Conseillers Technique :</h5>
                           <p><b>VIGNAUX</b> Michel <br> & <br> <b>GIROLA</b> Joël</p>
                         </li>
-                        <li class="list-group-item"><h5>Formateur :</h5>
+                        <li class="list-group-item mx-auto">
+                          <h5>Formateur :</h5>
                           <p><b>VERGE</b> Gérard</p>
                         </li>
                       </ul>
@@ -141,33 +151,34 @@
       </div>
     </main>
   </div>
-  <footer class="footer bg-dark text-light mt-auto ">
-    <div class="container pt-2">
-      <div class="row justify-content-center">
-        <div class="col-6">
-          <div class="contact text-center">
-            <span>Retrouvez-nous sur :</span>
-            <a href="https://www.facebook.com/AMCO-Amicale-Moto-Cyclo-Occitanie-106697515109895 " target="blank"><img src="/Annexe/Images/Icone/Facebook.png"width="16" height="16">
-            </a> 
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="form_contact text-center">
-            <span>Pour tout contact :</span>
-            <a href="/Index/contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle text-danger" viewBox="0 0 16 16">
-              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-              <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
-            </svg>
-            </a> 
-          </div>
+  <!--FOOTER-->
+  <footer class="footer container-fluid bg-dark text-light">
+  <div class="container pt-2">
+    <div class="row d-flex">
+      <div class="col-6">
+        <div class="contact text-center">
+          <span>Retrouvez-nous sur :</span>
+          <a href="https://www.facebook.com/AMCO-Amicale-Moto-Cyclo-Occitanie-106697515109895" target="blank"><img src="/Annexe/Images/Icone/Facebook.png"width="16" height="16">
+          </a> 
         </div>
       </div>
-      <div class="row justify-content-center pt-3">
-        <div class="col-12 text-center" id="copyright">
-          <p class="mb-1">Copyright @ <script>document.write(new Date().getFullYear());</script> by Micktar. Tous droits réservés.</p>
+      <div class="col-6">
+        <div class="form_contact text-center">
+          <span>Pour tout contact :</span>
+          <a href="/Index/contact.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle text-danger" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+          </svg>
+          </a> 
         </div>
       </div>
     </div>
+    <div class="row pt-3">
+      <div class="col-12 text-center" id="copyright">
+        <p class="mb-1">Copyright @ <script>document.write(new Date().getFullYear());</script> by Micktar. Tous droits réservés.</p>
+      </div>
+    </div>
+  </div>
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

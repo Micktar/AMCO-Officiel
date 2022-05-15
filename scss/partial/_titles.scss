@@ -1,0 +1,51 @@
+@import "formules.scss";
+
+/*GENERAL*/
+h1 {
+  font-size: 2.8rem;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 5px;  
+  padding-bottom: 5px; 
+  color: rgb(255, 255, 255);
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h5 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/*HOME*/
+
+.event_article  h5 {
+    background: #d3d3d3a8;
+    box-shadow: -0em 0 .8em #fc8702;  
+    padding: 5px;
+    margin-bottom: 10px;
+    text-decoration: none; 
+}
+
+/*EVENT*/ 
+
+/*Modal Title*/
+#join_modal_label {
+  margin: auto;
+}
+
+/*CLUB*/
+
+.statuts_club h5 {
+  font-size: 14px;
+  color: rgb(0, 183, 255);
+  font-style: oblique;
+  text-decoration: none;
+  padding-top: 5px;
+}
+

@@ -1,0 +1,47 @@
+@import "formules.scss";
+
+
+/*Event*/
+
+.event_description {
+
+ .card .btn {
+    font-size: 10px;
+    width: 100px;
+    font-weight: 700;
+  }
+
+  .modal .btn {
+    font-size: 10px;
+  }
+}
+
+
+/*Contact page*/
+
+.contact_page .btn  {
+  margin-top: 11px;
+}
+
+
+#scroll_to_top {
+  position:fixed;
+  right: 0px;
+  bottom: 200px;
+ 
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+  
+ /*Contact page*/
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  
+}

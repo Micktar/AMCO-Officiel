@@ -1,0 +1,130 @@
+@import "formules.scss";
+
+.card {
+  .card-header {
+    background: rgb(224, 224, 204);
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px ;
+    line-height: 25px; 
+  }
+
+  .card-footer {
+    text-align: center;
+  }
+}
+
+/*Home*/
+.accueil section {  
+  padding-left: 2vw;
+  padding-right: 2vw;
+  
+  .card {
+    border-radius: 10px;
+  }
+  .card-header {
+    border-radius: 10px 10px 0 0 ;
+  }
+}
+
+.new_year > .card > .card-body > p {
+  font-family: 'Gloria Hallelujah';
+  font-size: 12px;
+}
+
+.event_article .card-header {
+  color: #fc8702;
+  font-size: 20px;
+}
+
+.general_information .adhésion {
+  text-decoration: underline;
+  font-size: 13px;
+}
+
+/*EVENT*/
+
+.event_description .card-text a {
+  text-decoration: none; 
+  font-size: 10px;
+}
+
+/*Modal*/
+
+.event_description .modal-content  {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 450px;
+  
+  .modal-body {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .form-group {
+   margin-bottom: 20px;
+  }
+}
+ 
+
+.event { 
+  form > div > label {
+    font-weight: bold;
+    font-size: 10px;
+  }
+  .form-check {
+    font-size: 10px;
+  }
+  ::placeholder {
+    font-size: 9px;
+  }
+}
+
+/*CLUB*/
+
+.club a {
+  text-decoration: none; 
+}
+  
+.statuts_club li {
+  background: #d3d3d3a8;
+  border: 2px solid #000 ;
+  margin-bottom: 5px;
+  padding: 0;
+  width: 90%;
+  max-width: 300px;
+ 
+  p {
+    font-size: 14px;
+    padding-left: 5px;
+  }
+}
+  
+/* ARCHIVES*/
+
+.archives > .wrapper > article {
+  text-align: justify;
+  
+  .card ul {
+    padding-left: 10px;   
+  }
+}
+
+.archives a {
+  text-decoration: none; 
+}
+
+
+
+/*RESPONSIVE*/ 
+
+@media screen and (min-width: 576px) and (max-width: 1023px) { /* for tablette & landscape */ 
+  
+  
+  .card {
+    max-width: 500px;
+    
+  }
+
+}
