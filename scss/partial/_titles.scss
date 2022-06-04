@@ -18,6 +18,11 @@ h2 { /*Card-header*/
   font-weight: bold;
 }
 
+.event_article h2 {
+  color: #fc8702;
+  font-size: $size_20;
+}
+
 h3 { /*title statut of club*/
   font-size: 1.3rem;
   text-align: center;

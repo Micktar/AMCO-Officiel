@@ -13,6 +13,8 @@
 
 #dropdown_archives > li {
   box-shadow: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #button {
@@ -48,12 +50,17 @@
     display: none;
   }
 
-  #navbar_content { 
-    justify-content: center;
+  #navbar_content {
     a:hover {
       background: rgb(0, 0, 0);
-    color: yellow
+      color: yellow
     }
+  }
+
+  #navbar_content { 
+    justify-content: center;
+    
+    
     .nav-item {
       margin: $size_10;
       width: 17vw;  
@@ -66,7 +73,6 @@
     }   
   }
 }
-
 
   /* for desktops */
   

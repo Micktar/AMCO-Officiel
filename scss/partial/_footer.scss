@@ -14,15 +14,26 @@
 @media screen and (min-width: 576px)  { /* Résolution Min. tablette */ 
   
   footer {
-    font-size: $size_15;   
+    font-size: $size_15 + 10; 
+
+    img, svg {
+      height: 30px;
+      width: 30px;
+    }
   }
 
   #copyright {
-    font-size: $size_13 - 2;
-    font-style: oblique;
+    font-size: $size_15;
   }
 }
 
+#footer_contact_page {
+  font-size: $size_10 * 3;
 
+  img {
+    height: 40px;
+    width: 40px;
+  }
+}
 
 /* FOOTER OKAY*/

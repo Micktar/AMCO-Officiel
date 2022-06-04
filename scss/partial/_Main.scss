@@ -51,10 +51,7 @@ section {
  
 }
 
-.event_article h2 {
-  color: #fc8702;
-  font-size: $size_20;
-}
+
 
 .general_information .adhésion {
   text-decoration: underline;
@@ -199,7 +196,7 @@ section {
 
 /*Form*/
 .needs-validation {
-  background: lighten(#fff000, 30%);
+  background: lighten(#fff000, 40%);
   text-align: center;
   width: 300px;
   height: 470px;
@@ -237,10 +234,17 @@ article {
 }
 
 /*HOME*/
-.event_article .card-header {
-  font-size: $size_10 * 3;
-}
+.event_article {
 
+  img {
+    width: 40px;
+    height: 45px;
+  }
+
+  .card-header {
+    font-size: $size_10 * 3;
+  }
+}
 /*EVENT*/
 
 
@@ -323,8 +327,6 @@ article {
 /*HOME*/      
   .accueil section {
     margin: $size_10 * 5;
-
-    
   }
 
   .general_information .adhésion {
@@ -332,6 +334,12 @@ article {
   }
 
   .event_article {
+
+    img {
+      width: 50px;
+      height: 55px;
+    }
+
     .card-header {
       font-size: $size_10 * 3;
     }
@@ -389,16 +397,47 @@ article {
 
 }
 
-/*CLUB*/
-.statuts_club li {
-  max-width: 450px;
- 
-  p {
-    font-size: $size_20;
-    padding-left: $size_20;
+  /*CLUB*/
+  .statuts_club li {
+    max-width: 450px;
+  
+    p {
+      font-size: $size_20;
+      padding-left: $size_20;
 
+    }
   }
-}
 
+  /* PICTURES */ 
 
-/*ARCHIVES*/
+  .pictures {
+    .wrapper {
+      margin-top: 10vw;   
+    }
+    
+    p {
+      font-size: $size_10 * 4;    
+    }
+  }
+
+  /*CONTACT PAGE*/
+
+  /*Form*/
+  .needs-validation {
+    font-size: $size_20;
+    width: 600px;
+    height: 700px;
+
+    ::placeholder{
+      font-size: $size_15;
+    }
+
+    div {
+      padding-top: $size_10 +2             ;
+    }
+  }
+
+  #condition_accept {
+    font-size: $size_15;
+    padding-left: 0px;
+  }

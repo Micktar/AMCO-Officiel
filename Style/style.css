@@ -10990,6 +10990,8 @@ textarea.form-control-lg {
 
 #dropdown_archives > li {
   box-shadow: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #button {
@@ -11021,12 +11023,13 @@ textarea.form-control-lg {
     display: none;
   }
 
-  #navbar_content {
-    justify-content: center;
-  }
   #navbar_content a:hover {
     background: black;
     color: yellow;
+  }
+
+  #navbar_content {
+    justify-content: center;
   }
   #navbar_content .nav-item {
     margin: 10px;
@@ -11130,11 +11133,6 @@ section {
 
 .new_year > .card > .card-body > p {
   font-family: "Gloria Hallelujah";
-}
-
-.event_article h2, .event_article .h2 {
-  color: #fc8702;
-  font-size: 20px;
 }
 
 .general_information .adhésion {
@@ -11257,7 +11255,7 @@ section {
 /*CONTACT PAGE*/
 /*Form*/
 .needs-validation {
-  background: #fff999;
+  background: #fffccc;
   text-align: center;
   width: 300px;
   height: 470px;
@@ -11293,6 +11291,10 @@ section {
   }
 
   /*HOME*/
+  .event_article img {
+    width: 40px;
+    height: 45px;
+  }
   .event_article .card-header {
     font-size: 30px;
   }
@@ -11375,6 +11377,10 @@ section {
     font-size: 20px;
   }
 
+  .event_article img {
+    width: 50px;
+    height: 55px;
+  }
   .event_article .card-header {
     font-size: 30px;
   }
@@ -11431,7 +11437,33 @@ section {
   padding-left: 20px;
 }
 
-/*ARCHIVES*/
+/* PICTURES */
+.pictures .wrapper {
+  margin-top: 10vw;
+}
+.pictures p {
+  font-size: 40px;
+}
+
+/*CONTACT PAGE*/
+/*Form*/
+.needs-validation {
+  font-size: 20px;
+  width: 600px;
+  height: 700px;
+}
+.needs-validation ::placeholder {
+  font-size: 15px;
+}
+.needs-validation div {
+  padding-top: 12px;
+}
+
+#condition_accept {
+  font-size: 15px;
+  padding-left: 0px;
+}
+
 /*%text_bold_center {
   text-align: center;
   font-weight: bold;
@@ -11452,6 +11484,11 @@ h2, .h2 {
   font-size: 1.4rem;
   text-align: center;
   font-weight: bold;
+}
+
+.event_article h2, .event_article .h2 {
+  color: #fc8702;
+  font-size: 20px;
 }
 
 h3, .h3 {
@@ -11591,6 +11628,14 @@ h6, .h6 {
 }
 
 @media screen and (min-width: 576px) and (max-width: 1023px) {
+  #scroll_to_top {
+    bottom: 100px;
+  }
+  #scroll_to_top svg {
+    width: 30px;
+    height: 30px;
+  }
+
   /*Event*/
   .event_description .card .btn {
     font-size: 15px;
@@ -11605,17 +11650,17 @@ h6, .h6 {
     font-size: 15px;
     text-decoration: none;
   }
-
-  #scroll_to_top {
-    bottom: 100px;
-  }
-  #scroll_to_top svg {
-    width: 30px;
-    height: 30px;
-  }
 }
 @media screen and (min-width: 1024px) {
   /* for desktops */
+  #scroll_to_top {
+    background: #fffb00;
+  }
+  #scroll_to_top svg {
+    width: 45px;
+    height: 45px;
+  }
+
   /*EVENT*/
   .event_description .card .btn {
     margin-top: 10px;
@@ -11630,12 +11675,12 @@ h6, .h6 {
     font-size: 15px;
   }
 
-  #scroll_to_top {
-    background: #fffb00;
-  }
-  #scroll_to_top svg {
-    width: 45px;
-    height: 45px;
+  /*Contact page*/
+  .contact_page .btn {
+    margin-top: 5px;
+    font-size: 15px;
+    width: 200px;
+    height: 50px;
   }
 }
 /*%text_bold_center {
@@ -11657,14 +11702,25 @@ h6, .h6 {
 @media screen and (min-width: 576px) {
   /* Résolution Min. tablette */
   footer {
-    font-size: 15px;
+    font-size: 25px;
+  }
+  footer img, footer svg {
+    height: 30px;
+    width: 30px;
   }
 
   #copyright {
-    font-size: 11px;
-    font-style: oblique;
+    font-size: 15px;
   }
 }
+#footer_contact_page {
+  font-size: 30px;
+}
+#footer_contact_page img {
+  height: 40px;
+  width: 40px;
+}
+
 /* FOOTER OKAY*/
 /*REVOIR LES DIFF FICHIERS SCSS  Header > Menu & Cards > Articles au lieu de section + font size avec responsive*/
 html, body {
