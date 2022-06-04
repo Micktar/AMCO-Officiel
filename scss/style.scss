@@ -1,17 +1,17 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "partial/_Formules";
+@import "partial/_Nav";
+@import "partial/_Main";
+@import "partial/_Titles";
+@import "partial/_Buttons";
+@import "partial/_Footer";
 
-@import "partial/_formules";
-@import "partial/_header";
-@import "partial/_sections";
-@import "partial/_titles";
-@import "partial/_cards";
-@import "partial/_buttons";
-@import "partial/_footer";
+
+/*REVOIR LES DIFF FICHIERS SCSS  Header > Menu & Cards > Articles au lieu de section + font size avec responsive*/
 
 html, body {
   font-size: $size_10;
   width: 100%;
-  height: 100%;
   background: rgb(124, 119, 119);
 }
 
@@ -33,10 +33,48 @@ main {
   }
 }
 
-@media screen and (min-width: 1024px) { /* for desktops */ 
-  
-  html, body {
-    font-size: $size_13;
-    
+
+@media screen and (min-width: 1024px){ /* for desktops */ 
+  html {
+    background: rgb(0,0,0);
   }
+
+  body {
+    max-width: 2000px;
+    @include mp-auto
+  }
+
+ 
+  
+  /*Parametrage CSS Grid */
+
+  #content {
+    display: grid; 
+   
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 15vw 1fr 80px;
+    grid-template-areas: "head head"
+                         "menu main"
+                         "foot foot";
+  }
+
+  #content header {
+    grid-area: head;
+  }
+
+  #content .menu_nav {
+    grid-area: menu;
+  }
+
+  #content footer {
+    grid-area: foot;
+  }
+}
+
+@media screen and (min-width: 2000px)  {
+  #content {
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 300px 1fr 100px;
+  }
+
 }

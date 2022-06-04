@@ -1,12 +1,9 @@
-@import "formules.scss";
+@import "Formules.scss";
 
 .footer {
-
-  font-weight: bold; 
-  padding-top: 10px;
-  padding-bottom: 10px;
   width: 100%;  
-
+  font-weight: bold; 
+  @include px-10;  
 }
 
 #copyright {
@@ -14,17 +11,18 @@
   font-style: oblique;
 }
 
-
-@media screen and (min-width: 576px) and (max-width: 1023px) { /*for tablette & landscape */
- 
+@media screen and (min-width: 576px)  { /* Résolution Min. tablette */ 
+  
   footer {
-    font-size: $size_13 + 2;   
+    font-size: $size_15;   
   }
 
   #copyright {
-  font-size: $size_13 - 2;
-  font-style: oblique;
+    font-size: $size_13 - 2;
+    font-style: oblique;
+  }
 }
- 
 
-}
+
+
+/* FOOTER OKAY*/

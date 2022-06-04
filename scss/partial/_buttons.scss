@@ -1,4 +1,4 @@
-@import "formules.scss";
+@import "Formules.scss";
 
 
 /*Event*/
@@ -6,16 +6,23 @@
 .event_description {
 
  .card .btn {
-    font-size: 10px;
+    font-size: $size_10 ;
     width: 100px;
     font-weight: 700;
   }
 
   .modal .btn {
-    font-size: 10px;
+    font-size: $size_10;
   }
 }
 
+#table_participation {
+
+  .btn a {
+    font-size: $size_10;
+    text-decoration: none;    
+  }
+}
 
 /*Contact page*/
 
@@ -23,29 +30,81 @@
   margin-top: 11px;
 }
 
-
 #scroll_to_top {
   position:fixed;
+  background: rgb(255, 251, 0);
   right: 1vw;
   bottom: 200px;
  
   svg {
-    width: 20px;
-    height: 20px;
+    width: $size_20;
+    height: $size_20;
   }
 }
 
 
 @media screen and (min-width: 576px) and (max-width: 1023px) {
   
+/*Event*/
+
+.event_description {
+
+  .card .btn {
+     font-size: $size_15;
+     width: 150px;
+   }
+ 
+   .modal .btn {
+     font-size: $size_15;
+   }
+ }
+
+  /*table of officials participants*/
+  #table_participation {
+    .btn a {
+      font-size: $size_15;
+      text-decoration: none;    
+    }
+  }
+
   #scroll_to_top {
-    background: rgb(255, 251, 0);
     bottom: 100px;
     svg {
       width: 30px;
       height: 30px;
     }
   }
+}
+
+@media screen and (min-width: 1024px){ /* for desktops */ 
   
+  /*EVENT*/
+  .event_description {
+    .card .btn {
+      margin-top: 10px;
+      font-size: $size_20;
+      width: 200px;
+    }
+   
+    .modal .btn {
+      font-size: $size_20;
+    }
+  }
+
+  #table_participation {
+    .btn a {
+      font-size: $size_15;
+    }
+  }
+   
+ 
   
+  #scroll_to_top {
+    background: rgb(255, 251, 0);
+    
+    svg {
+      width: 45px;
+      height: 45px;
+    }
+  }
 }

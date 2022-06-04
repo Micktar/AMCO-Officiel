@@ -1,0 +1,118 @@
+@import "Formules.scss";
+
+#logo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#navbar_content li {
+  width: 70%;
+  @include mp-auto;
+  font-family: 'Gloria Hallelujah', cursive;
+  box-shadow: 0.3em 0 .6em darken($yellow, 0.5%);
+}
+
+#dropdown_archives > li {
+  box-shadow: none;
+}
+
+#button {
+  color: $red;
+  border-color: $yellow;
+  border-radius: $size_10 ;
+}
+
+/* NAVBAR CONTACT PAGE */
+#home {
+  font-size: 22px;
+  text-decoration: none;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width: 575px) { 
+  .second_banniere, #sidebar {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .first_banniere,
+  #logo, .bi-house-door, .bi-calendar3-event, .bi-bicycle, .bi-images, .bi-archive {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+  #sidebar {
+    display: none;
+  }
+
+  #navbar_content { 
+    justify-content: center;
+    a:hover {
+      background: rgb(0, 0, 0);
+    color: yellow
+    }
+    .nav-item {
+      margin: $size_10;
+      width: 17vw;  
+      max-width: 130px;
+      font-size: $size_15; 
+    }   
+    #dropdown_archives {
+      width: 17vw;  
+      max-width: 130px;
+    }   
+  }
+}
+
+
+  /* for desktops */
+  
+@media screen and (min-width: 1024px) {
+  #Nav {
+    display: none; 
+  }
+
+  #sidebar .list-unstyled a:hover {
+      background: rgb(0, 0, 0);
+      color: yellow
+  }
+
+  .menu_nav {
+    background: rgb(187, 178, 178);
+    border: $border_black_5;
+    margin-left: $size_10;
+    margin-bottom: $size_5;
+        
+    .container {
+        height: 100%;
+        text-align: center ;
+    }
+
+    li {
+        padding: $size_20;  
+    }
+
+    .list-unstyled > li > a {
+      @include dark_shadow-txt_w;
+      font-size: 25px; 
+    } 
+
+    #dropdown_archives {
+      @include dark_shadow-txt_w;
+      font-size: 25px;
+    }  
+
+  }
+
+  .menu_footer {
+    margin-top: 80px;
+    .col {
+      padding-bottom: 50px ;
+    }
+  }
+
+}
+  

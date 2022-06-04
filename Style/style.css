@@ -77,7 +77,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  /*color: var(--bs-body-color);*/
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -225,14 +225,6 @@ sub {
 
 sup {
   top: -0.5em;
-}
-
-a {
-  color: #0f64e4;
-  text-decoration: underline;
-}
-a:hover {
-  color: #0c50b6;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3616,10 +3608,10 @@ textarea.form-control-lg {
 .dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.25rem 1rem;
+  /*padding: $dropdown-item-padding-y $dropdown-item-padding-x;*/
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: #fff;
   text-align: inherit;
   text-decoration: none;
   white-space: nowrap;
@@ -4415,13 +4407,6 @@ textarea.form-control-lg {
 
 .card-link + .card-link {
   margin-left: 1rem;
-}
-
-.card-header {
-  padding: 0.5rem 1rem;
-  margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-footer {
@@ -10983,13 +10968,22 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*%text_bold_center {
+  text-align: center;
+  font-weight: bold;
+}*/
+/*%text_bold_center {
+  text-align: center;
+  font-weight: bold;
+}*/
 #logo {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #navbar_content li {
   width: 70%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Gloria Hallelujah", cursive;
   box-shadow: 0.3em 0 0.6em #fcfc00;
 }
@@ -11012,23 +11006,27 @@ textarea.form-control-lg {
 
 /*RESPONSIVE*/
 @media screen and (max-width: 575px) {
-  .second_banniere {
+  .second_banniere, #sidebar {
     display: none;
   }
 }
 @media screen and (min-width: 576px) {
-  .first_banniere, .wrapper > .menu_nav,
+  .first_banniere,
 #logo, .bi-house-door, .bi-calendar3-event, .bi-bicycle, .bi-images, .bi-archive {
     display: none;
   }
 }
 @media screen and (min-width: 576px) and (max-width: 1023px) {
+  #sidebar {
+    display: none;
+  }
+
   #navbar_content {
     justify-content: center;
   }
   #navbar_content a:hover {
-    color: #ffffff;
-    background: #d3d3d3a8;
+    background: black;
+    color: yellow;
   }
   #navbar_content .nav-item {
     margin: 10px;
@@ -11041,9 +11039,58 @@ textarea.form-control-lg {
     max-width: 130px;
   }
 }
+/* for desktops */
 @media screen and (min-width: 1024px) {
-  /* for desktops */
+  #Nav {
+    display: none;
+  }
+
+  #sidebar .list-unstyled a:hover {
+    background: black;
+    color: yellow;
+  }
+
+  .menu_nav {
+    background: #bbb2b2;
+    border: 2px solid #000;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+  .menu_nav .container {
+    height: 100%;
+    text-align: center;
+  }
+  .menu_nav li {
+    padding: 20px;
+  }
+  .menu_nav .list-unstyled > li > a {
+    font-family: "Gloria Hallelujah", cursive;
+    background: #4d4d4d;
+    box-shadow: 0 0.8em 0.6em black;
+    color: white;
+    font-size: 25px;
+  }
+  .menu_nav #dropdown_archives {
+    font-family: "Gloria Hallelujah", cursive;
+    background: #4d4d4d;
+    box-shadow: 0 0.8em 0.6em black;
+    color: white;
+    font-size: 25px;
+  }
+
+  .menu_footer {
+    margin-top: 80px;
+  }
+  .menu_footer .col {
+    padding-bottom: 50px;
+  }
 }
+/*%text_bold_center {
+  text-align: center;
+  font-weight: bold;
+}*/
+/*CARD FOOTER TAILLE EN MEDIA QUERIES*/
+/*GENERAL*/
 article {
   max-width: 500px;
   margin-left: auto;
@@ -11057,10 +11104,81 @@ section {
   padding: 5px;
 }
 
+.card .card-header {
+  background: #e0e0cc;
+  line-height: 25px;
+  padding: 7px;
+}
+.card .card-footer {
+  text-align: center;
+}
+.card .card-text {
+  text-align: justify;
+}
+
+/*HOME*/
+.accueil section {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.accueil section .card {
+  border-radius: 10px;
+}
+.accueil section .card-header {
+  border-radius: 10px 10px 0 0;
+}
+
+.new_year > .card > .card-body > p {
+  font-family: "Gloria Hallelujah";
+}
+
+.event_article h2, .event_article .h2 {
+  color: #fc8702;
+  font-size: 20px;
+}
+
+.general_information .adhésion {
+  text-decoration: underline;
+  color: red;
+  font-size: 13px;
+}
+
 /*EVENT*/
+/*e-mail event juillet 2025*/
+.event_description .card-text a {
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/*Modal*/
+.event_description .modal-content {
+  width: 70%;
+  height: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #cccccc;
+}
+.event_description .modal-content .modal-body {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.event_description .modal-content .form-group {
+  margin-bottom: 20px;
+}
+
+.event form > div > label {
+  font-weight: bold;
+  font-size: 10px;
+}
+.event .form-check, .event ::placeholder {
+  font-size: 10px;
+}
+
 /*table of officials participants*/
 .participation {
   background: #b4c0b4;
+  text-align: center;
 }
 
 #table_participation {
@@ -11075,10 +11193,6 @@ section {
   padding: 5px;
   vertical-align: middle;
 }
-#table_participation td > .btn > a {
-  font-size: 10px;
-  text-decoration: none;
-}
 
 /*progress bar*/
 .progress_bar {
@@ -11089,6 +11203,27 @@ section {
   height: 15px;
   margin-bottom: 10px;
   font-size: 1.2rem;
+}
+
+/*CLUB*/
+.club a {
+  text-decoration: none;
+}
+
+.statuts_club li {
+  background: #d3d3d3a8;
+  border: 2px solid #000;
+  margin-bottom: 5px;
+  padding: 0;
+  width: 90%;
+  max-width: 300px;
+}
+.statuts_club li p {
+  font-size: 13px;
+  padding-left: 5px;
+}
+.statuts_club li p svg {
+  margin-left: 10px;
 }
 
 /* PICTURES */
@@ -11107,6 +11242,18 @@ section {
   font-weight: bold;
 }
 
+/* ARCHIVES*/
+.archives > .wrapper > article {
+  text-align: justify;
+}
+.archives > .wrapper > article .card ul {
+  padding-left: 10px;
+}
+
+.archives a {
+  text-decoration: none;
+}
+
 /*CONTACT PAGE*/
 /*Form*/
 .needs-validation {
@@ -11114,9 +11261,10 @@ section {
   text-align: center;
   width: 300px;
   height: 470px;
-  margin: auto;
-  border: 2px solid black;
+  border: 2px solid #000;
   border-style: dotted;
+  margin-left: auto;
+  margin-right: auto;
 }
 .needs-validation div {
   padding-top: 5px;
@@ -11135,20 +11283,46 @@ section {
 /*RESPONSIVE*/
 @media screen and (min-width: 576px) and (max-width: 1023px) {
   /* for tablette & landscape */
+  /*GENERAL*/
   article {
     max-width: 600px;
   }
 
+  .card .card-header {
+    line-height: 30px;
+  }
+
+  /*HOME*/
+  .event_article .card-header {
+    font-size: 30px;
+  }
+
   /*EVENT*/
+  /*e-mail event juillet 2025*/
+  .event_description .card-text a {
+    font-size: 13px;
+  }
+
+  /*Modal*/
+  .event_description .modal-content {
+    width: 90%;
+    height: 570px;
+  }
+
+  .event form > div > label {
+    font-size: 13px;
+  }
+  .event .form-check, .event ::placeholder {
+    /*Cylindré de la moto*/
+    font-size: 13px;
+  }
+
   /*table of officials participants*/
   #table_participation {
     font-size: 13px;
   }
   #table_participation thead > tr > th {
     font-size: 15px;
-  }
-  #table_participation td > .btn a {
-    font-size: 13px;
   }
 
   /*progress bar*/
@@ -11166,33 +11340,140 @@ section {
   }
 
   #condition_accept {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
-/*GENERAL*/
+/* FOR DESKTOP */
+@media screen and (min-width: 1024px) {
+  /*GENERAL*/
+  article {
+    max-width: 800px;
+  }
+
+  section .card-body {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .card .card-header {
+    line-height: 60px;
+  }
+
+  .card-footer {
+    font-size: 20px;
+  }
+
+  /*HOME*/
+  .accueil section {
+    margin: 50px;
+  }
+
+  .general_information .adhésion {
+    font-size: 20px;
+  }
+
+  .event_article .card-header {
+    font-size: 30px;
+  }
+  .event_article .card-body {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  /*EVENT*/
+  .event_description .card-text a {
+    font-size: 17px;
+  }
+
+  /*Modal*/
+  .event_description .modal-content {
+    width: 100%;
+    height: 600px;
+  }
+  .event_description .modal-content .form-group {
+    margin-bottom: 30px;
+  }
+
+  .event form > div > label {
+    font-size: 15px;
+  }
+  .event .form-check, .event ::placeholder {
+    font-size: 13px;
+  }
+
+  #table_participation {
+    font-size: 15px;
+    border-color: #5c5a5a;
+  }
+  #table_participation thead > tr > th {
+    padding: 5px;
+    font-size: 20px;
+  }
+  #table_participation tbody > tr > th, #table_participation td {
+    padding: 10px;
+  }
+
+  .progress_bar .progress {
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+}
+/*CLUB*/
+.statuts_club li {
+  max-width: 450px;
+}
+.statuts_club li p {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+/*ARCHIVES*/
+/*%text_bold_center {
+  text-align: center;
+  font-weight: bold;
+}*/
 h1, .h1 {
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   font-family: "Gloria Hallelujah", cursive;
   font-weight: bold;
   text-align: center;
-  margin-top: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   color: white;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
 
-h5, .h5 {
-  font-size: 1.5rem;
+h2, .h2 {
+  /*Card-header*/
+  font-size: 1.4rem;
   text-align: center;
   font-weight: bold;
-  text-decoration: underline;
 }
 
-/*HOME*/
-.event_article h5, .event_article .h5 {
+h3, .h3 {
+  /*title statut of club*/
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+  color: #00b7ff;
+  font-style: oblique;
+  padding-top: 5px;
+}
+
+h5, .h5 {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+h6, .h6 {
+  /*Card-title*/
+  text-align: center;
+  font-weight: bold;
   background: #d3d3d3a8;
   box-shadow: 0em 0 0.8em #fc8702;
   padding: 5px;
@@ -11200,19 +11481,11 @@ h5, .h5 {
   text-decoration: none;
 }
 
-/*EVENT*/
-/*Modal Title*/
+/* PAGE EVENT Modal Title H5*/
 #join_modal_label {
+  font-family: "Gloria Hallelujah", cursive;
   margin: auto;
-}
-
-/*CLUB*/
-.statuts_club h5, .statuts_club .h5 {
-  font-size: 14px;
-  color: #00b7ff;
-  font-style: oblique;
-  text-decoration: none;
-  padding-top: 5px;
+  color: black;
 }
 
 /*RESPONSIVE*/
@@ -11223,125 +11496,69 @@ h5, .h5 {
     font-size: 3.5rem;
   }
 
-  h5, .h5 {
+  h2, .h2 {
+    /*Card-header*/
+    font-size: 1.7rem;
+  }
+
+  h3, .h3 {
+    /*title statut of club*/
     font-size: 1.5rem;
-    text-align: center;
-    font-weight: bold;
+  }
+
+  h5, .h5 {
+    /* EVENT PAGE*/
+    font-size: 1.5rem;
     text-decoration: underline;
   }
-}
-.card .card-header {
-  background: #e0e0cc;
-  text-align: center;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 25px;
-}
-.card .card-footer {
-  text-align: center;
-}
 
-/*Home*/
-.accueil section {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.accueil section .card {
-  border-radius: 10px;
-}
-.accueil section .card-header {
-  border-radius: 10px 10px 0 0;
-}
-
-.new_year > .card > .card-body > p {
-  font-family: "Gloria Hallelujah";
-  font-size: 12px;
-}
-
-.event_article .card-header {
-  color: #fc8702;
-  font-size: 20px;
-}
-
-.general_information .adhésion {
-  text-decoration: underline;
-  font-size: 13px;
-}
-
-/*EVENT*/
-.event_description .card-text a {
-  text-decoration: none;
-  font-size: 10px;
-}
-
-/*Modal*/
-.event_description .modal-content {
-  width: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 450px;
-}
-.event_description .modal-content .modal-body {
-  width: 90%;
-  margin: auto;
-}
-.event_description .modal-content .form-group {
-  margin-bottom: 20px;
-}
-
-.event form > div > label {
-  font-weight: bold;
-  font-size: 10px;
-}
-.event .form-check {
-  font-size: 10px;
-}
-.event ::placeholder {
-  font-size: 9px;
-}
-
-/*CLUB*/
-.club a {
-  text-decoration: none;
-}
-
-.statuts_club li {
-  background: #d3d3d3a8;
-  border: 2px solid #000;
-  margin-bottom: 5px;
-  padding: 0;
-  width: 90%;
-  max-width: 300px;
-}
-.statuts_club li p {
-  font-size: 14px;
-  padding-left: 5px;
-}
-
-/* ARCHIVES*/
-.archives > .wrapper > article {
-  text-align: justify;
-}
-.archives > .wrapper > article .card ul {
-  padding-left: 10px;
-}
-
-.archives a {
-  text-decoration: none;
-}
-
-/*RESPONSIVE*/
-@media screen and (min-width: 576px) and (max-width: 1023px) {
-  /* for tablette & landscape */
-  .card .card-header {
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  .event_article .card-header {
-    font-size: 30px;
+  h6, .h6 {
+    /*Card-title*/
+    font-size: 1.2rem;
   }
 }
+#join_modal_label {
+  /* Modal Title H5*/
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  /* for desktop */
+  h1, .h1 {
+    font-size: 5rem;
+    margin-top: -0.05vw;
+  }
+
+  h2, .h2 {
+    font-size: 2.7rem;
+  }
+
+  #sidebar h2, #sidebar .h2 {
+    font-size: 4.5rem;
+    margin-top: 30px;
+    padding-bottom: 50px;
+    font-weight: bold;
+    font-family: "Gloria Hallelujah", cursive;
+  }
+
+  h3, .h3 {
+    font-size: 2.6rem;
+  }
+
+  h5, .h5 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  h6, .h6 {
+    font-size: 2rem;
+  }
+}
+/*%text_bold_center {
+  text-align: center;
+  font-weight: bold;
+}*/
 /*Event*/
 .event_description .card .btn {
   font-size: 10px;
@@ -11352,6 +11569,11 @@ h5, .h5 {
   font-size: 10px;
 }
 
+#table_participation .btn a {
+  font-size: 10px;
+  text-decoration: none;
+}
+
 /*Contact page*/
 .contact_page .btn {
   margin-top: 11px;
@@ -11359,6 +11581,7 @@ h5, .h5 {
 
 #scroll_to_top {
   position: fixed;
+  background: #fffb00;
   right: 1vw;
   bottom: 200px;
 }
@@ -11368,8 +11591,22 @@ h5, .h5 {
 }
 
 @media screen and (min-width: 576px) and (max-width: 1023px) {
+  /*Event*/
+  .event_description .card .btn {
+    font-size: 15px;
+    width: 150px;
+  }
+  .event_description .modal .btn {
+    font-size: 15px;
+  }
+
+  /*table of officials participants*/
+  #table_participation .btn a {
+    font-size: 15px;
+    text-decoration: none;
+  }
+
   #scroll_to_top {
-    background: #fffb00;
     bottom: 100px;
   }
   #scroll_to_top svg {
@@ -11377,11 +11614,39 @@ h5, .h5 {
     height: 30px;
   }
 }
+@media screen and (min-width: 1024px) {
+  /* for desktops */
+  /*EVENT*/
+  .event_description .card .btn {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 200px;
+  }
+  .event_description .modal .btn {
+    font-size: 20px;
+  }
+
+  #table_participation .btn a {
+    font-size: 15px;
+  }
+
+  #scroll_to_top {
+    background: #fffb00;
+  }
+  #scroll_to_top svg {
+    width: 45px;
+    height: 45px;
+  }
+}
+/*%text_bold_center {
+  text-align: center;
+  font-weight: bold;
+}*/
 .footer {
+  width: 100%;
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 100%;
 }
 
 #copyright {
@@ -11389,8 +11654,8 @@ h5, .h5 {
   font-style: oblique;
 }
 
-@media screen and (min-width: 576px) and (max-width: 1023px) {
-  /*for tablette & landscape */
+@media screen and (min-width: 576px) {
+  /* Résolution Min. tablette */
   footer {
     font-size: 15px;
   }
@@ -11400,10 +11665,11 @@ h5, .h5 {
     font-style: oblique;
   }
 }
+/* FOOTER OKAY*/
+/*REVOIR LES DIFF FICHIERS SCSS  Header > Menu & Cards > Articles au lieu de section + font size avec responsive*/
 html, body {
   font-size: 10px;
   width: 100%;
-  height: 100%;
   background: #7c7777;
 }
 
@@ -11424,8 +11690,40 @@ main {
 }
 @media screen and (min-width: 1024px) {
   /* for desktops */
-  html, body {
-    font-size: 13px;
+  html {
+    background: black;
+  }
+
+  body {
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*Parametrage CSS Grid */
+  #content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 15vw 1fr 80px;
+    grid-template-areas: "head head" "menu main" "foot foot";
+  }
+
+  #content header {
+    grid-area: head;
+  }
+
+  #content .menu_nav {
+    grid-area: menu;
+  }
+
+  #content footer {
+    grid-area: foot;
+  }
+}
+@media screen and (min-width: 2000px) {
+  #content {
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: 300px 1fr 100px;
   }
 }
 
