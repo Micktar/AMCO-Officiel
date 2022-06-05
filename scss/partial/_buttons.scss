@@ -7,8 +7,8 @@
 
  .card .btn {
     font-size: $size_10 ;
-    width: 100px;
     font-weight: 700;
+    @include size(100px,40px);
   }
 
   .modal .btn {
@@ -30,6 +30,7 @@
   margin-top: 11px;
 }
 
+/*-------------*/
 
 #scroll_to_top {
   position:fixed;
@@ -38,8 +39,7 @@
   bottom: 200px;
  
   svg {
-    width: $size_20;
-    height: $size_20;
+    @include size (25px, 25px);
   }
 }
 
@@ -49,8 +49,7 @@
   #scroll_to_top {
     bottom: 100px;
     svg {
-      width: 30px;
-      height: 30px;
+     @include size(30px,30px);
     }
   }
 /*Event*/
@@ -59,7 +58,7 @@
 
   .card .btn {
      font-size: $size_15;
-     width: 150px;
+     @include size(200px,60px);
    }
  
    .modal .btn {
@@ -74,8 +73,6 @@
       text-decoration: none;    
     }
   }
-
-  
 }
 
 @media screen and (min-width: 1024px){ /* for desktops */ 
@@ -84,17 +81,16 @@
     background: rgb(255, 251, 0);
     
     svg {
-      width: 45px;
-      height: 45px;
+      @include size(45px,45px);
     }
   }
   
   /*EVENT*/
   .event_description {
     .card .btn {
-      margin-top: 10px;
       font-size: $size_20;
-      width: 200px;
+      @include margin(10px,0,0,0);
+      @include size(200px,80px);
     }
    
     .modal .btn {
@@ -111,11 +107,12 @@
  /*Contact page*/
 
   .contact_page .btn  {
-    margin-top: 5px;
     font-size: $size_15;
-    width: 200px;
-    height: 50px;
+    margin-top: 5px;
+    @include size(200px,50px);
+    
   } 
-  
-  
 }
+
+
+/*FINI*/ 

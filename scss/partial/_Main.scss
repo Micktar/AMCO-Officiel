@@ -1,8 +1,5 @@
 @import "Formules.scss";
 
-
-/*CARD FOOTER TAILLE EN MEDIA QUERIES*/
-
 /*GENERAL*/
 article {
   max-width: 500px;
@@ -10,17 +7,15 @@ article {
 }
 
 section {
-  margin-top: $size_10;
-  border: 3px solid #000000;
-  border-radius: $size_10;
-  padding: $size_5;
+  @include margin(10px,0,0,0);
+  @include border3_radius;
 }
 
 .card {
   .card-header {
     background: rgb(224, 224, 204);
     line-height: 25px; 
-    padding: 7px;
+    @include padding(7,7,7,7);
   }
 
   .card-footer {
@@ -35,8 +30,8 @@ section {
 
 /*HOME*/
 .accueil section {  
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: $size_5;
+  padding-right: $size_5;
   
   .card {
     border-radius: $size_10;
@@ -48,10 +43,7 @@ section {
 
 .new_year > .card > .card-body > p {
   font-family: 'Gloria Hallelujah';
- 
 }
-
-
 
 .general_information .adhésion {
   text-decoration: underline;
@@ -61,7 +53,7 @@ section {
 
 /*EVENT*/
 
-/*e-mail event juillet 2025*/
+/*e-mail Event juillet 2025*/
 .event_description .card-text a { 
   text-decoration: none; 
   font-size: $size_10;
@@ -81,7 +73,7 @@ section {
   }
   
   .form-group {
-   margin-bottom: 20px;
+   margin-bottom: $size_20;
   }
 }
 
@@ -109,18 +101,16 @@ section {
 
   thead > tr > th {
     padding: 3px;
-    font-size: 12px;
+    font-size: $size_13;
   }
 
   tbody > tr > th, td {
     padding: 5px;
     vertical-align: middle;
   }
-
 }
 
 /*progress bar*/
-
 .progress_bar {
   padding: $size_10;
   background: rgb(180, 192, 180);
@@ -128,12 +118,11 @@ section {
   .progress {
     height: $size_15;
     margin-bottom: $size_10;
-    font-size: 1.2rem;
+    font-size: $size_10;
   }
 }
 
 /*CLUB*/
-
 .club a {
   text-decoration: none; 
 }
@@ -174,12 +163,10 @@ section {
     background: white;
     color: rgb(0, 0, 0);
     font-weight: bold;
-    
   }
 }
 
 /* ARCHIVES*/
-
 .archives > .wrapper > article {
   text-align: justify;
   
@@ -193,15 +180,14 @@ section {
 }
 
 /*CONTACT PAGE*/
-
 /*Form*/
 .needs-validation {
-  background: lighten(#fff000, 40%);
+  background: $yellow_lighten;
   text-align: center;
-  width: 300px;
-  height: 470px;
   border: $border_black_2;
   border-style: dotted;
+  width: 300px;
+  height: 470px;
   @include mp-auto;
 
   div {
@@ -222,8 +208,7 @@ section {
 
 /*RESPONSIVE*/
 
-@media screen and (min-width: 576px) and (max-width: 1023px) { /* for tablette & landscape */ 
- 
+@media screen and (min-width: 576px) and (max-width: 1023px) { /* for tablette & landscape */  
 /*GENERAL*/
 article {
   max-width: 600px;
@@ -235,7 +220,6 @@ article {
 
 /*HOME*/
 .event_article {
-
   img {
     width: 40px;
     height: 45px;
@@ -267,7 +251,6 @@ article {
   .form-check, ::placeholder { /*Cylindré de la moto*/
     font-size: $size_13;
   }
-  
 }
 
 /*table of officials participants*/
@@ -285,7 +268,6 @@ article {
 }
 
 /*CONTACT*/
-
   .needs-validation {
     width: 400px;
     height: 620px;
@@ -300,10 +282,11 @@ article {
   }
 }
 
+
 /* FOR DESKTOP */ 
 @media screen and (min-width: 1024px)  { 
+
 /*GENERAL*/
-  
   article {
     max-width: 800px;
   } 
@@ -344,8 +327,7 @@ article {
       font-size: $size_10 * 3;
     }
     .card-body {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      @include padding (10px,10px,0,0);  /*A VERIFIER !!!!*/
     }
   }
 
@@ -395,8 +377,7 @@ article {
       font-size: 1.8rem;
   }
 
-}
-
+  
   /*CLUB*/
   .statuts_club li {
     max-width: 450px;
@@ -427,13 +408,18 @@ article {
     font-size: $size_20;
     width: 600px;
     height: 700px;
-
-    ::placeholder{
+    
+    ::placeholder {
       font-size: $size_15;
     }
 
-    div {
-      padding-top: $size_10 +2             ;
+    .form-group {
+      padding-top: $size_15;
+    }
+
+    #FormControlContactMessage {
+      font-size: 13px;
+      height: 85px;
     }
   }
 
@@ -441,3 +427,4 @@ article {
     font-size: $size_15;
     padding-left: 0px;
   }
+}

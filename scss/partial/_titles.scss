@@ -3,46 +3,37 @@
 h1 {
   font-size: 2.7rem;
   font-family: 'Gloria Hallelujah', cursive;
-  font-weight: bold;
-  text-align: center;
   color: rgb(255, 255, 255);
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  @include align_weight;
 }
-
 
 h2 { /*Card-header*/
   font-size: 1.4rem;
-  text-align: center;
-  font-weight: bold;
+  @include align_weight;
 }
 
 .event_article h2 {
-  color: #fc8702;
+  color: $orange;
   font-size: $size_20;
 }
 
 h3 { /*title statut of club*/
   font-size: 1.3rem;
-  text-align: center;
-  font-weight: bold;
-  color: rgb(0, 183, 255);
+  color: $sky_blue;
   font-style: oblique;
   padding-top: 5px;
+  @include align_weight;
 }
 
 h5 { 
   font-size: 1.6rem;
-  text-align: center;
-  font-weight: bold;
+  @include align_weight;
 }
 
 h6 { /*Card-title*/
-  text-align: center;
-  font-weight: bold;
-  background: #d3d3d3a8;
-  box-shadow: -0em 0 .8em #fc8702;  
+  @include align_weight;
+  background: $lgray;
+  box-shadow: -0em 0 .8em $orange;  
   padding: 5px;
   margin-bottom: 10px;
   text-decoration: none; 
@@ -51,7 +42,6 @@ h6 { /*Card-title*/
 /* PAGE EVENT Modal Title H5*/
 #join_modal_label {
   font-family: 'Gloria Hallelujah', cursive;
-  margin: auto;
   color: black;
 }
 
@@ -73,8 +63,7 @@ h6 { /*Card-title*/
   }
 
   h5 { /* EVENT PAGE*/
-    font-size: 1.5rem;
-    text-decoration: underline;
+    font-size: 1.4rem;
   }
 
   h6 { /*Card-title*/
@@ -91,7 +80,7 @@ h6 { /*Card-title*/
   
   h1 {
     font-size: 5rem;
-    margin-top: -.05vw;
+    margin-top: -0.8vw;
   }
 
   h2{
@@ -103,7 +92,6 @@ h6 { /*Card-title*/
     font-size: 4.5rem;
     margin-top: 30px;
     padding-bottom: 50px;
-    font-weight: bold;
     font-family: 'Gloria Hallelujah', cursive;
   }
 
@@ -113,7 +101,6 @@ h6 { /*Card-title*/
 
   h5 {
     font-size: 2.5rem;
-    text-align: center;
     padding-bottom: 10px;
   }
 
@@ -121,3 +108,6 @@ h6 { /*Card-title*/
     font-size: 2rem;
   }
 }
+
+
+/*FINI*/

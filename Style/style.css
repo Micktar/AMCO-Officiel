@@ -10968,14 +10968,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-/*%text_bold_center {
-  text-align: center;
-  font-weight: bold;
-}*/
-/*%text_bold_center {
-  text-align: center;
-  font-weight: bold;
-}*/
 #logo {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -10992,6 +10984,8 @@ textarea.form-control-lg {
   box-shadow: none;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #button {
@@ -11007,25 +11001,28 @@ textarea.form-control-lg {
 }
 
 /*RESPONSIVE*/
+/*only mobile*/
 @media screen and (max-width: 575px) {
   .second_banniere, #sidebar {
     display: none;
   }
 }
+/*for tablette or landscape min*/
 @media screen and (min-width: 576px) {
   .first_banniere,
 #logo, .bi-house-door, .bi-calendar3-event, .bi-bicycle, .bi-images, .bi-archive {
     display: none;
   }
 }
+/*for tablette and landscape*/
 @media screen and (min-width: 576px) and (max-width: 1023px) {
   #sidebar {
     display: none;
   }
 
   #navbar_content a:hover {
-    background: black;
-    color: yellow;
+    background: #000;
+    color: #ffff00;
   }
 
   #navbar_content {
@@ -11049,15 +11046,17 @@ textarea.form-control-lg {
   }
 
   #sidebar .list-unstyled a:hover {
-    background: black;
-    color: yellow;
+    background: #000;
+    color: #ffff00;
   }
 
   .menu_nav {
     background: #bbb2b2;
-    border: 2px solid #000;
+    border: 5px solid #000;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 10px;
-    margin-bottom: 5px;
+    margin-right: 5px;
   }
   .menu_nav .container {
     height: 100%;
@@ -11088,11 +11087,7 @@ textarea.form-control-lg {
     padding-bottom: 50px;
   }
 }
-/*%text_bold_center {
-  text-align: center;
-  font-weight: bold;
-}*/
-/*CARD FOOTER TAILLE EN MEDIA QUERIES*/
+/*FINI*/
 /*GENERAL*/
 article {
   max-width: 500px;
@@ -11102,7 +11097,10 @@ article {
 
 section {
   margin-top: 10px;
-  border: 3px solid #000000;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border: 3px solid #000;
   border-radius: 10px;
   padding: 5px;
 }
@@ -11110,7 +11108,10 @@ section {
 .card .card-header {
   background: #e0e0cc;
   line-height: 25px;
-  padding: 7px;
+  padding-top: 7;
+  padding-bottom: 7;
+  padding-left: 7;
+  padding-right: 7;
 }
 .card .card-footer {
   text-align: center;
@@ -11142,7 +11143,7 @@ section {
 }
 
 /*EVENT*/
-/*e-mail event juillet 2025*/
+/*e-mail Event juillet 2025*/
 .event_description .card-text a {
   text-decoration: none;
   font-size: 10px;
@@ -11185,7 +11186,7 @@ section {
 }
 #table_participation thead > tr > th {
   padding: 3px;
-  font-size: 12px;
+  font-size: 13px;
 }
 #table_participation tbody > tr > th, #table_participation td {
   padding: 5px;
@@ -11200,7 +11201,7 @@ section {
 .progress_bar .progress {
   height: 15px;
   margin-bottom: 10px;
-  font-size: 1.2rem;
+  font-size: 10px;
 }
 
 /*CLUB*/
@@ -11255,12 +11256,12 @@ section {
 /*CONTACT PAGE*/
 /*Form*/
 .needs-validation {
-  background: #fffccc;
+  background: #fffee6;
   text-align: center;
-  width: 300px;
-  height: 470px;
   border: 2px solid #000;
   border-style: dotted;
+  width: 300px;
+  height: 470px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -11387,6 +11388,9 @@ section {
   .event_article .card-body {
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+    /*A VERIFIER !!!!*/
   }
 
   /*EVENT*/
@@ -11427,56 +11431,53 @@ section {
     margin-bottom: 10px;
     font-size: 1.8rem;
   }
-}
-/*CLUB*/
-.statuts_club li {
-  max-width: 450px;
-}
-.statuts_club li p {
-  font-size: 20px;
-  padding-left: 20px;
-}
 
-/* PICTURES */
-.pictures .wrapper {
-  margin-top: 10vw;
-}
-.pictures p {
-  font-size: 40px;
-}
+  /*CLUB*/
+  .statuts_club li {
+    max-width: 450px;
+  }
+  .statuts_club li p {
+    font-size: 20px;
+    padding-left: 20px;
+  }
 
-/*CONTACT PAGE*/
-/*Form*/
-.needs-validation {
-  font-size: 20px;
-  width: 600px;
-  height: 700px;
-}
-.needs-validation ::placeholder {
-  font-size: 15px;
-}
-.needs-validation div {
-  padding-top: 12px;
-}
+  /* PICTURES */
+  .pictures .wrapper {
+    margin-top: 10vw;
+  }
+  .pictures p {
+    font-size: 40px;
+  }
 
-#condition_accept {
-  font-size: 15px;
-  padding-left: 0px;
-}
+  /*CONTACT PAGE*/
+  /*Form*/
+  .needs-validation {
+    font-size: 20px;
+    width: 600px;
+    height: 700px;
+  }
+  .needs-validation ::placeholder {
+    font-size: 15px;
+  }
+  .needs-validation .form-group {
+    padding-top: 15px;
+  }
+  .needs-validation #FormControlContactMessage {
+    font-size: 13px;
+    height: 85px;
+  }
 
-/*%text_bold_center {
-  text-align: center;
-  font-weight: bold;
-}*/
+  #condition_accept {
+    font-size: 15px;
+    padding-left: 0px;
+  }
+}
 h1, .h1 {
   font-size: 2.7rem;
   font-family: "Gloria Hallelujah", cursive;
-  font-weight: bold;
-  text-align: center;
   color: white;
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+  text-align: center;
+  font-weight: bold;
 }
 
 h2, .h2 {
@@ -11494,11 +11495,11 @@ h2, .h2 {
 h3, .h3 {
   /*title statut of club*/
   font-size: 1.3rem;
-  text-align: center;
-  font-weight: bold;
   color: #00b7ff;
   font-style: oblique;
   padding-top: 5px;
+  text-align: center;
+  font-weight: bold;
 }
 
 h5, .h5 {
@@ -11521,7 +11522,6 @@ h6, .h6 {
 /* PAGE EVENT Modal Title H5*/
 #join_modal_label {
   font-family: "Gloria Hallelujah", cursive;
-  margin: auto;
   color: black;
 }
 
@@ -11545,8 +11545,7 @@ h6, .h6 {
 
   h5, .h5 {
     /* EVENT PAGE*/
-    font-size: 1.5rem;
-    text-decoration: underline;
+    font-size: 1.4rem;
   }
 
   h6, .h6 {
@@ -11563,7 +11562,7 @@ h6, .h6 {
   /* for desktop */
   h1, .h1 {
     font-size: 5rem;
-    margin-top: -0.05vw;
+    margin-top: -0.8vw;
   }
 
   h2, .h2 {
@@ -11574,7 +11573,6 @@ h6, .h6 {
     font-size: 4.5rem;
     margin-top: 30px;
     padding-bottom: 50px;
-    font-weight: bold;
     font-family: "Gloria Hallelujah", cursive;
   }
 
@@ -11584,7 +11582,6 @@ h6, .h6 {
 
   h5, .h5 {
     font-size: 2.5rem;
-    text-align: center;
     padding-bottom: 10px;
   }
 
@@ -11592,15 +11589,13 @@ h6, .h6 {
     font-size: 2rem;
   }
 }
-/*%text_bold_center {
-  text-align: center;
-  font-weight: bold;
-}*/
+/*FINI*/
 /*Event*/
 .event_description .card .btn {
   font-size: 10px;
-  width: 100px;
   font-weight: 700;
+  width: 100px;
+  height: 40px;
 }
 .event_description .modal .btn {
   font-size: 10px;
@@ -11616,6 +11611,7 @@ h6, .h6 {
   margin-top: 11px;
 }
 
+/*-------------*/
 #scroll_to_top {
   position: fixed;
   background: #fffb00;
@@ -11623,8 +11619,8 @@ h6, .h6 {
   bottom: 200px;
 }
 #scroll_to_top svg {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 @media screen and (min-width: 576px) and (max-width: 1023px) {
@@ -11639,7 +11635,8 @@ h6, .h6 {
   /*Event*/
   .event_description .card .btn {
     font-size: 15px;
-    width: 150px;
+    width: 200px;
+    height: 60px;
   }
   .event_description .modal .btn {
     font-size: 15px;
@@ -11663,9 +11660,13 @@ h6, .h6 {
 
   /*EVENT*/
   .event_description .card .btn {
-    margin-top: 10px;
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
     width: 200px;
+    height: 80px;
   }
   .event_description .modal .btn {
     font-size: 20px;
@@ -11677,21 +11678,20 @@ h6, .h6 {
 
   /*Contact page*/
   .contact_page .btn {
-    margin-top: 5px;
     font-size: 15px;
+    margin-top: 5px;
     width: 200px;
     height: 50px;
   }
 }
-/*%text_bold_center {
-  text-align: center;
-  font-weight: bold;
-}*/
+/*FINI*/
 .footer {
   width: 100%;
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 #copyright {
@@ -11699,30 +11699,43 @@ h6, .h6 {
   font-style: oblique;
 }
 
-@media screen and (min-width: 576px) {
-  /* Résolution Min. tablette */
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+  /* for tablette */
+  footer {
+    font-size: 15px;
+  }
+  footer img, footer svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (min-width: 1023px) {
+  /* for desktop */
   footer {
     font-size: 25px;
   }
   footer img, footer svg {
-    height: 30px;
     width: 30px;
+    height: 30px;
+  }
+
+  #footer_contact_page {
+    font-size: 20px;
+  }
+  #footer_contact_page img {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 25px;
+    margin-right: 0;
+    width: 40px;
+    height: 40px;
   }
 
   #copyright {
     font-size: 15px;
   }
 }
-#footer_contact_page {
-  font-size: 30px;
-}
-#footer_contact_page img {
-  height: 40px;
-  width: 40px;
-}
-
-/* FOOTER OKAY*/
-/*REVOIR LES DIFF FICHIERS SCSS  Header > Menu & Cards > Articles au lieu de section + font size avec responsive*/
+/*FINI*/
 html, body {
   font-size: 10px;
   width: 100%;
@@ -11777,6 +11790,7 @@ main {
   }
 }
 @media screen and (min-width: 2000px) {
+  /*for desktops XL*/
   #content {
     grid-template-columns: 250px 1fr;
     grid-template-rows: 300px 1fr 100px;

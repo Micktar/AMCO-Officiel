@@ -6,9 +6,6 @@
 @import "partial/_Buttons";
 @import "partial/_Footer";
 
-
-/*REVOIR LES DIFF FICHIERS SCSS  Header > Menu & Cards > Articles au lieu de section + font size avec responsive*/
-
 html, body {
   font-size: $size_10;
   width: 100%;
@@ -23,16 +20,13 @@ main {
   margin-top: 30px;
 }
 
-
 /*RESPONSIVE*/
 
 @media screen and (min-width: 576px) and (max-width: 1023px) { /* for tablette & landscape */ 
-  
   html, body {
     font-size: $size_13;
   }
 }
-
 
 @media screen and (min-width: 1024px){ /* for desktops */ 
   html {
@@ -44,13 +38,9 @@ main {
     @include mp-auto
   }
 
- 
-  
   /*Parametrage CSS Grid */
-
   #content {
     display: grid; 
-   
     grid-template-columns: 250px 1fr;
     grid-template-rows: 15vw 1fr 80px;
     grid-template-areas: "head head"
@@ -71,10 +61,9 @@ main {
   }
 }
 
-@media screen and (min-width: 2000px)  {
+@media screen and (min-width: 2000px) { /*for desktops XL*/
   #content {
     grid-template-columns: 250px 1fr;
     grid-template-rows: 300px 1fr 100px;
   }
-
 }

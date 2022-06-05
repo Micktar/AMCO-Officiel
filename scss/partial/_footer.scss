@@ -3,7 +3,7 @@
 .footer {
   width: 100%;  
   font-weight: bold; 
-  @include px-10;  
+  @include padding(10px,10px,0,0);  
 }
 
 #copyright {
@@ -11,14 +11,33 @@
   font-style: oblique;
 }
 
-@media screen and (min-width: 576px)  { /* Résolution Min. tablette */ 
+
+@media screen and (min-width: 576px) and (max-width: 1023px) { /* for tablette */ 
+  footer {
+    font-size: $size_15;
+
+    img, svg {
+      @include size(25px,25px)
+    }
+  }
+}
+
+@media screen and (min-width: 1023px)  { /* for desktop */ 
   
   footer {
     font-size: $size_15 + 10; 
 
     img, svg {
-      height: 30px;
-      width: 30px;
+      @include size(30px,30px);
+    }
+  }
+
+  #footer_contact_page {
+    font-size: $size_10 * 2;
+
+    img {
+      @include margin(0,0,25px,0);
+      @include size(40px,40px);
     }
   }
 
@@ -27,13 +46,6 @@
   }
 }
 
-#footer_contact_page {
-  font-size: $size_10 * 3;
 
-  img {
-    height: 40px;
-    width: 40px;
-  }
-}
 
-/* FOOTER OKAY*/
+/*FINI*/

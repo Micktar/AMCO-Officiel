@@ -4,6 +4,8 @@ $gray: #5c5a5a;
 $white: #ffffff;
 $yellow: #ffff00;
 $orange: #fc8702;
+$sky_blue: #00b7ff;
+
 
 $yellow_lighten: lighten(#fff000, 45%);
 $yellow_darker: darken(#fff000, 0.5%);
@@ -17,23 +19,51 @@ $size_20: 20px;
 
 $border_black_1: 1px solid #000;
 $border_black_2: 2px solid #000;
-$border_black_5: 2px solid #000;
+$border_black_3: 3px solid #000;
+$border_black_5: 5px solid #000;
 
-/*%text_bold_center {
+
+@mixin bg_fcolor ($color1, $color2) {
+  background: $color1;
+  color: $color2;
+}
+
+@mixin align_weight {
   text-align: center;
   font-weight: bold;
-}*/
+}
 
+@mixin margin($sizeT, $sizeB, $sizeL, $sizeR) { 
+  margin-top: $sizeT;
+  margin-bottom: $sizeB;
+  margin-left: $sizeL;
+  margin-right: $sizeR;
+}
+
+@mixin padding($sizeT, $sizeB, $sizeL, $sizeR) { 
+  padding-top: $sizeT;
+  padding-bottom: $sizeB;
+  padding-left: $sizeL;
+  padding-right: $sizeR;
+}
 
 @mixin mp-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-@mixin px-10 {
-  padding-top: $size_10;
-  padding-bottom: $size_10;
+@mixin size($size1, $size2) { 
+  width: $size1;
+  height: $size2;
 }
+
+@mixin border3_radius {
+  border: 3px solid #000;
+  border-radius: $size_10;
+  padding: $size_5;
+}
+
+
 
 @mixin dark_shadow-txt_w {
   font-family: 'Gloria Hallelujah', cursive;
@@ -41,4 +71,7 @@ $border_black_5: 2px solid #000;
   box-shadow:  0 0.8em .6em darken($black, 0.9%);
   color: white ;
 }
+
+
+
 
