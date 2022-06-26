@@ -1,5 +1,5 @@
-dart-sass
-scss/node_modules
-.stylelintrc.json
-package-lock.json
-package.json
+/dart-sass/
+/scss/node_modules
+/.stylelintrc.json
+/package-lock.json
+/package.json
