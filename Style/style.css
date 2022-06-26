@@ -77,7 +77,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  /*color: var(--bs-body-color);*/
+  color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -98,7 +98,7 @@ hr:not([size]) {
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
   font-weight: 500;
   line-height: 1.2;
 }
@@ -225,6 +225,14 @@ sub {
 
 sup {
   top: -0.5em;
+}
+
+a {
+  color: #0f64e4;
+  text-decoration: underline;
+}
+a:hover {
+  color: #0c50b6;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -619,6 +627,49 @@ progress {
   padding-left: var(--bs-gutter-x, 0.75rem);
   margin-right: auto;
   margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
 }
 
 .col {
@@ -1255,7 +1306,7 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .col-lg {
     flex: 1 0 0%;
   }
@@ -2075,7 +2126,7 @@ progress {
     -webkit-overflow-scrolling: touch;
   }
 }
-@media (max-width: 1023.98px) {
+@media (max-width: 991.98px) {
   .table-responsive-lg {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -2844,7 +2895,6 @@ textarea.form-control-lg {
 .btn {
   display: inline-block;
   font-weight: 400;
-  line-height: 1.5;
   color: #212529;
   text-align: center;
   text-decoration: none;
@@ -2853,9 +2903,6 @@ textarea.form-control-lg {
   user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3327,18 +3374,6 @@ textarea.form-control-lg {
   color: #6c757d;
 }
 
-.btn-lg, .btn-group-lg > .btn {
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  border-radius: 0.3rem;
-}
-
-.btn-sm, .btn-group-sm > .btn {
-  padding: 0.25rem 0.5rem;
-  font-size: 0.875rem;
-  border-radius: 0.2rem;
-}
-
 .fade {
   transition: opacity 0.15s linear;
 }
@@ -3404,6 +3439,7 @@ textarea.form-control-lg {
   position: absolute;
   z-index: 1000;
   display: none;
+  min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0;
   font-size: 1rem;
@@ -3471,7 +3507,7 @@ textarea.form-control-lg {
     left: auto;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .dropdown-menu-lg-start {
     --bs-position: start;
   }
@@ -3608,10 +3644,10 @@ textarea.form-control-lg {
 .dropdown-item {
   display: block;
   width: 100%;
-  /*padding: $dropdown-item-padding-y $dropdown-item-padding-x;*/
+  padding: 0.25rem 1rem;
   clear: both;
   font-weight: 400;
-  color: #fff;
+  color: #212529;
   text-align: inherit;
   text-decoration: none;
   white-space: nowrap;
@@ -4072,7 +4108,7 @@ textarea.form-control-lg {
     overflow-y: visible;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .navbar-expand-lg {
     flex-wrap: nowrap;
     justify-content: flex-start;
@@ -4409,10 +4445,105 @@ textarea.form-control-lg {
   margin-left: 1rem;
 }
 
+.card-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-header:first-child {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
 .card-footer {
   padding: 0.5rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
   border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card-footer:last-child {
+  border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+}
+
+.card-header-tabs {
+  margin-right: -0.5rem;
+  margin-bottom: -0.5rem;
+  margin-left: -0.5rem;
+  border-bottom: 0;
+}
+
+.card-header-pills {
+  margin-right: -0.5rem;
+  margin-left: -0.5rem;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  border-radius: calc(0.25rem - 1px);
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  width: 100%;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.card-img,
+.card-img-bottom {
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+.card-group > .card {
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 576px) {
+  .card-group {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .card-group > .card {
+    flex: 1 0 0%;
+    margin-bottom: 0;
+  }
+  .card-group > .card + .card {
+    margin-left: 0;
+    border-left: 0;
+  }
+  .card-group > .card:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .card-group > .card:not(:last-child) .card-img-top,
+.card-group > .card:not(:last-child) .card-header {
+    border-top-right-radius: 0;
+  }
+  .card-group > .card:not(:last-child) .card-img-bottom,
+.card-group > .card:not(:last-child) .card-footer {
+    border-bottom-right-radius: 0;
+  }
+  .card-group > .card:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .card-group > .card:not(:first-child) .card-img-top,
+.card-group > .card:not(:first-child) .card-header {
+    border-top-left-radius: 0;
+  }
+  .card-group > .card:not(:first-child) .card-img-bottom,
+.card-group > .card:not(:first-child) .card-footer {
+    border-bottom-left-radius: 0;
+  }
 }
 
 .accordion-button {
@@ -4860,7 +4991,10 @@ textarea.form-control-lg {
   background-color: #0f64e4;
   border-color: #0f64e4;
 }
-.list-group-item.active {
+.list-group-item + .list-group-item {
+  border-top-width: 0;
+}
+.list-group-item + .list-group-item.active {
   margin-top: -1px;
   border-top-width: 1px;
 }
@@ -4936,7 +5070,7 @@ textarea.form-control-lg {
     border-left-width: 1px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .list-group-horizontal-lg {
     flex-direction: row;
   }
@@ -5349,7 +5483,7 @@ textarea.form-control-lg {
     max-width: 300px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .modal-lg,
 .modal-xl {
     max-width: 800px;
@@ -5425,7 +5559,7 @@ textarea.form-control-lg {
     border-radius: 0;
   }
 }
-@media (max-width: 1023.98px) {
+@media (max-width: 991.98px) {
   .modal-fullscreen-lg-down {
     width: 100vw;
     max-width: none;
@@ -6254,7 +6388,7 @@ textarea.form-control-lg {
     z-index: 1020;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .sticky-lg-top {
     position: sticky;
     top: 0;
@@ -8957,7 +9091,7 @@ textarea.form-control-lg {
     text-align: center !important;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .float-lg-start {
     float: left !important;
   }
@@ -10989,6 +11123,7 @@ textarea.form-control-lg {
 }
 
 #button {
+  background: none;
   color: #ff0000;
   border-color: #ffff00;
   border-radius: 10px;
@@ -11023,23 +11158,27 @@ textarea.form-control-lg {
   #navbar_content a:hover {
     background: #000;
     color: #ffff00;
+    border-color: none;
   }
 
   #navbar_content {
     justify-content: center;
   }
   #navbar_content .nav-item {
-    margin: 10px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     width: 17vw;
     max-width: 130px;
-    font-size: 15px;
   }
   #navbar_content #dropdown_archives {
     width: 17vw;
     max-width: 130px;
   }
 }
-/* for desktops */
+/* FOR DESKTOPS */
 @media screen and (min-width: 1024px) {
   #Nav {
     display: none;
@@ -11048,10 +11187,11 @@ textarea.form-control-lg {
   #sidebar .list-unstyled a:hover {
     background: #000;
     color: #ffff00;
+    border-color: none;
   }
 
   .menu_nav {
-    background: #bbb2b2;
+    background: #d3d3d3a8;
     border: 5px solid #000;
     margin-top: 0;
     margin-bottom: 0;
@@ -11062,8 +11202,12 @@ textarea.form-control-lg {
     height: 100%;
     text-align: center;
   }
-  .menu_nav li {
-    padding: 20px;
+  .menu_nav .nav-item {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 60px;
   }
   .menu_nav .list-unstyled > li > a {
     font-family: "Gloria Hallelujah", cursive;
@@ -11072,22 +11216,30 @@ textarea.form-control-lg {
     color: white;
     font-size: 25px;
   }
-  .menu_nav #dropdown_archives {
+  .menu_nav #dropdown_menu_archives {
     font-family: "Gloria Hallelujah", cursive;
     background: #4d4d4d;
     box-shadow: 0 0.8em 0.6em black;
     color: white;
-    font-size: 25px;
+    font-size: 23px;
+    transform: translate3d(45px, 110px, 0) !important;
   }
 
   .menu_footer {
     margin-top: 80px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   .menu_footer .col {
+    padding-top: 0;
     padding-bottom: 50px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
-/*FINI*/
+/*Validée*/
+/*Settings Mobile First*/
 /*GENERAL*/
 article {
   max-width: 500px;
@@ -11108,10 +11260,10 @@ section {
 .card .card-header {
   background: #e0e0cc;
   line-height: 25px;
-  padding-top: 7;
-  padding-bottom: 7;
-  padding-left: 7;
-  padding-right: 7;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 .card .card-footer {
   text-align: center;
@@ -11121,10 +11273,6 @@ section {
 }
 
 /*HOME*/
-.accueil section {
-  padding-left: 5px;
-  padding-right: 5px;
-}
 .accueil section .card {
   border-radius: 10px;
 }
@@ -11143,7 +11291,7 @@ section {
 }
 
 /*EVENT*/
-/*e-mail Event juillet 2025*/
+/*E-mail Event juillet 2025*/
 .event_description .card-text a {
   text-decoration: none;
   font-size: 10px;
@@ -11153,6 +11301,7 @@ section {
 .event_description .modal-content {
   width: 70%;
   height: 450px;
+  min-width: 300px;
   margin-left: auto;
   margin-right: auto;
   background: #cccccc;
@@ -11165,6 +11314,9 @@ section {
 .event_description .modal-content .form-group {
   margin-bottom: 20px;
 }
+.event_description .modal-content .modal-footer {
+  background: #1a1a1a;
+}
 
 .event form > div > label {
   font-weight: bold;
@@ -11174,9 +11326,9 @@ section {
   font-size: 10px;
 }
 
-/*table of officials participants*/
+/*Table of officials participants*/
 .participation {
-  background: #b4c0b4;
+  background: #b5bfb5;
   text-align: center;
 }
 
@@ -11185,59 +11337,77 @@ section {
   border-color: #5c5a5a;
 }
 #table_participation thead > tr > th {
-  padding: 3px;
+  padding-top: 5px;
+  padding-bottom: 0;
+  padding-left: 5px;
+  padding-right: 5px;
   font-size: 13px;
 }
 #table_participation tbody > tr > th, #table_participation td {
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
   vertical-align: middle;
 }
 
 /*progress bar*/
 .progress_bar {
-  padding: 10px;
-  background: #b4c0b4;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 10px;
+  background: #b5bfb5;
 }
 .progress_bar .progress {
   height: 15px;
+  margin-top: 0;
   margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 0;
   font-size: 10px;
 }
 
 /*CLUB*/
-.club a {
-  text-decoration: none;
-}
-
 .statuts_club li {
   background: #d3d3d3a8;
-  border: 2px solid #000;
+  border: 2px dotted #000;
+  margin-top: 0;
   margin-bottom: 5px;
-  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
   width: 90%;
   max-width: 300px;
 }
 .statuts_club li p {
   font-size: 13px;
-  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 0;
+  padding-left: 10px;
+  padding-right: 0;
 }
 .statuts_club li p svg {
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: 10px;
+  margin-right: 0;
 }
 
 /* PICTURES */
 .pictures .wrapper {
   margin-top: 30vw;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 .pictures section {
   height: 100%;
   background: none;
-  border: none;
 }
 .pictures p {
   font-size: 30px;
   background: white;
-  color: black;
+  color: #000;
   font-weight: bold;
 }
 
@@ -11246,11 +11416,10 @@ section {
   text-align: justify;
 }
 .archives > .wrapper > article .card ul {
+  padding-top: 0;
+  padding-bottom: 0;
   padding-left: 10px;
-}
-
-.archives a {
-  text-decoration: none;
+  padding-right: 0;
 }
 
 /*CONTACT PAGE*/
@@ -11258,8 +11427,7 @@ section {
 .needs-validation {
   background: #fffee6;
   text-align: center;
-  border: 2px solid #000;
-  border-style: dotted;
+  border: 2px dotted #000;
   width: 300px;
   height: 470px;
   margin-left: auto;
@@ -11267,6 +11435,9 @@ section {
 }
 .needs-validation div {
   padding-top: 5px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .contact_page label {
@@ -11276,7 +11447,6 @@ section {
 
 #condition_accept {
   font-size: 8px;
-  padding-left: 0px;
 }
 
 /*RESPONSIVE*/
@@ -11316,7 +11486,7 @@ section {
     font-size: 13px;
   }
   .event .form-check, .event ::placeholder {
-    /*Cylindré de la moto*/
+    /*Cylindrée de la moto*/
     font-size: 13px;
   }
 
@@ -11340,6 +11510,9 @@ section {
   }
   .needs-validation div {
     padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #condition_accept {
@@ -11355,8 +11528,12 @@ section {
 
   section .card-body {
     font-size: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 30px;
     margin-right: 30px;
   }
@@ -11386,11 +11563,10 @@ section {
     font-size: 30px;
   }
   .event_article .card-body {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
     padding-left: 0;
     padding-right: 0;
-    /*A VERIFIER !!!!*/
   }
 
   /*EVENT*/
@@ -11404,32 +11580,43 @@ section {
     height: 600px;
   }
   .event_description .modal-content .form-group {
+    margin-top: 0;
     margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .event form > div > label {
-    font-size: 15px;
+    font-size: 18px;
   }
   .event .form-check, .event ::placeholder {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   #table_participation {
     font-size: 15px;
-    border-color: #5c5a5a;
   }
   #table_participation thead > tr > th {
-    padding: 5px;
     font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   #table_participation tbody > tr > th, #table_participation td {
-    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .progress_bar .progress {
     height: 30px;
-    margin-bottom: 10px;
-    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 0;
+    font-size: 15px;
   }
 
   /*CLUB*/
@@ -11438,14 +11625,24 @@ section {
   }
   .statuts_club li p {
     font-size: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 20px;
+    padding-right: 0;
   }
 
   /* PICTURES */
   .pictures .wrapper {
-    margin-top: 10vw;
+    margin-top: 100px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   .pictures p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
     font-size: 40px;
   }
 
@@ -11469,13 +11666,12 @@ section {
 
   #condition_accept {
     font-size: 15px;
-    padding-left: 0px;
   }
 }
 h1, .h1 {
   font-size: 2.7rem;
   font-family: "Gloria Hallelujah", cursive;
-  color: white;
+  color: #ffffff;
   text-align: center;
   font-weight: bold;
 }
@@ -11498,6 +11694,9 @@ h3, .h3 {
   color: #00b7ff;
   font-style: oblique;
   padding-top: 5px;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
   text-align: center;
   font-weight: bold;
 }
@@ -11508,26 +11707,35 @@ h5, .h5 {
   font-weight: bold;
 }
 
-h6, .h6 {
-  /*Card-title*/
+.card-title {
+  /* h6 */
+  box-shadow: 0em 0 0.8em #fc8702;
   text-align: center;
   font-weight: bold;
   background: #d3d3d3a8;
-  box-shadow: 0em 0 0.8em #fc8702;
-  padding: 5px;
-  margin-bottom: 10px;
-  text-decoration: none;
+  color: black;
+  border-color: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* PAGE EVENT Modal Title H5*/
-#join_modal_label {
+.event_description .modal-header {
+  background: #1a1a1a;
+  color: #ffffff;
+  border-color: none;
   font-family: "Gloria Hallelujah", cursive;
-  color: black;
 }
 
 /*RESPONSIVE*/
+/* for tablette & landscape */
 @media screen and (min-width: 576px) and (max-width: 1023px) {
-  /* for tablette & landscape */
   /*GENERAL*/
   h1, .h1 {
     font-size: 3.5rem;
@@ -11550,19 +11758,17 @@ h6, .h6 {
 
   h6, .h6 {
     /*Card-title*/
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
-#join_modal_label {
-  /* Modal Title H5*/
-  text-decoration: none;
-}
-
+/* FOR DESKTOP */
 @media screen and (min-width: 1024px) {
-  /* for desktop */
   h1, .h1 {
     font-size: 5rem;
     margin-top: -0.8vw;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   h2, .h2 {
@@ -11571,9 +11777,15 @@ h6, .h6 {
 
   #sidebar h2, #sidebar .h2 {
     font-size: 4.5rem;
-    margin-top: 30px;
-    padding-bottom: 50px;
     font-family: "Gloria Hallelujah", cursive;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 100px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   h3, .h3 {
@@ -11582,14 +11794,18 @@ h6, .h6 {
 
   h5, .h5 {
     font-size: 2.5rem;
+    padding-top: 0;
     padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   h6, .h6 {
     font-size: 2rem;
   }
 }
-/*FINI*/
+/*Vérifié*/
+/*GROSSIR LES BOUTON CONTACTER en resp ordi */
 /*Event*/
 .event_description .card .btn {
   font-size: 10px;
@@ -11608,10 +11824,13 @@ h6, .h6 {
 
 /*Contact page*/
 .contact_page .btn {
-  margin-top: 11px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
-/*-------------*/
+/*Archives & Conditions*/
 #scroll_to_top {
   position: fixed;
   background: #fffb00;
@@ -11623,6 +11842,7 @@ h6, .h6 {
   height: 25px;
 }
 
+/* For Tablette & Landscape */
 @media screen and (min-width: 576px) and (max-width: 1023px) {
   #scroll_to_top {
     bottom: 100px;
@@ -11648,8 +11868,8 @@ h6, .h6 {
     text-decoration: none;
   }
 }
+/* FOR DESKTOPS */
 @media screen and (min-width: 1024px) {
-  /* for desktops */
   #scroll_to_top {
     background: #fffb00;
   }
@@ -11672,8 +11892,12 @@ h6, .h6 {
     font-size: 20px;
   }
 
-  #table_participation .btn a {
-    font-size: 15px;
+  #table_participation .btn {
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   /*Contact page*/
@@ -11684,7 +11908,6 @@ h6, .h6 {
     height: 50px;
   }
 }
-/*FINI*/
 .footer {
   width: 100%;
   font-weight: bold;
@@ -11709,10 +11932,20 @@ h6, .h6 {
     height: 25px;
   }
 }
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
   /* for desktop */
   footer {
-    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 20px;
+  }
+  footer .container {
+    margin-top: 25px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   footer img, footer svg {
     width: 30px;
@@ -11735,7 +11968,8 @@ h6, .h6 {
     font-size: 15px;
   }
 }
-/*FINI*/
+/*Validée*/
+/*Settings Mobile First*/
 html, body {
   font-size: 10px;
   width: 100%;
@@ -11751,14 +11985,14 @@ main {
 }
 
 /*RESPONSIVE*/
+/* For Tablettes & Landscapes */
 @media screen and (min-width: 576px) and (max-width: 1023px) {
-  /* for tablette & landscape */
   html, body {
     font-size: 13px;
   }
 }
+/* For Desktops */
 @media screen and (min-width: 1024px) {
-  /* for desktops */
   html {
     background: black;
   }
@@ -11769,11 +12003,11 @@ main {
     margin-right: auto;
   }
 
-  /*Parametrage CSS Grid */
+  /*Settings CSS Grid */
   #content {
     display: grid;
     grid-template-columns: 250px 1fr;
-    grid-template-rows: 15vw 1fr 80px;
+    grid-template-rows: 15vw 1fr 150px;
     grid-template-areas: "head head" "menu main" "foot foot";
   }
 
@@ -11785,16 +12019,21 @@ main {
     grid-area: menu;
   }
 
+  #content main {
+    grid-area: main;
+  }
+
   #content footer {
     grid-area: foot;
   }
 }
+/*For Desktops XL*/
 @media screen and (min-width: 2000px) {
-  /*for desktops XL*/
   #content {
-    grid-template-columns: 250px 1fr;
-    grid-template-rows: 300px 1fr 100px;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 300px 1fr 150px;
   }
 }
+/*Vérifié code et contenu*/
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,11 @@
-@import "Formules.scss";
+@import "_Set";
 
+
+/*GROSSIR LES BOUTON CONTACTER en resp ordi */
 
 /*Event*/
 
 .event_description {
-
  .card .btn {
     font-size: $size_10 ;
     font-weight: 700;
@@ -17,7 +18,6 @@
 }
 
 #table_participation {
-
   .btn a {
     font-size: $size_10;
     text-decoration: none;    
@@ -27,10 +27,10 @@
 /*Contact page*/
 
 .contact_page .btn  {
-  margin-top: 11px;
+  @include margin(10px,0,0,0);
 }
 
-/*-------------*/
+/*Archives & Conditions*/
 
 #scroll_to_top {
   position:fixed;
@@ -43,7 +43,7 @@
   }
 }
 
-
+/* For Tablette & Landscape */ 
 @media screen and (min-width: 576px) and (max-width: 1023px) {
   
   #scroll_to_top {
@@ -52,10 +52,9 @@
      @include size(30px,30px);
     }
   }
+
 /*Event*/
-
 .event_description {
-
   .card .btn {
      font-size: $size_15;
      @include size(200px,60px);
@@ -75,7 +74,8 @@
   }
 }
 
-@media screen and (min-width: 1024px){ /* for desktops */ 
+/* FOR DESKTOPS */
+@media screen and (min-width: 1024px){  
 
   #scroll_to_top {
     background: rgb(255, 251, 0);
@@ -99,20 +99,19 @@
   }
 
   #table_participation {
-    .btn a {
-      font-size: $size_15;
+    .btn {
+      font-size: 20px;
+      @include padding(5px,5px,10px,10px)
+      
     }
   }
    
  /*Contact page*/
-
   .contact_page .btn  {
     font-size: $size_15;
     margin-top: 5px;
     @include size(200px,50px);
-    
   } 
 }
 
 
-/*FINI*/ 
