@@ -1,3 +1,3 @@
-/scss/node_modules/
-/dart-sass/
-/.stylelintrc.json
+dart-sass
+
+*.json
