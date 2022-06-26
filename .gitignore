@@ -1,7 +1,5 @@
 dart-sass
-
-/node_modules
-
-
-#ignore all files with the specified extension .json
-*.json
+scss/node_modules
+.stylelintrc.json
+package-lock.json
+package.json
