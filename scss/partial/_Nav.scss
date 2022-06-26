@@ -105,9 +105,10 @@
       font-size: 25px; 
     } 
 
-    #dropdown_archives {
+    #dropdown_menu_archives {
       @include dark_shadow-txt_w;
-      font-size: 25px;
+      @include margin(10px,0,10px,auto);
+      font-size: 20px;
     }  
 
   }

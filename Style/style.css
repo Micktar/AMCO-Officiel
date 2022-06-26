@@ -11072,12 +11072,16 @@ textarea.form-control-lg {
     color: white;
     font-size: 25px;
   }
-  .menu_nav #dropdown_archives {
+  .menu_nav #dropdown_menu_archives {
     font-family: "Gloria Hallelujah", cursive;
     background: #4d4d4d;
     box-shadow: 0 0.8em 0.6em black;
     color: white;
-    font-size: 25px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 10px;
+    margin-right: auto;
+    font-size: 20px;
   }
 
   .menu_footer {
