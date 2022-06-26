@@ -1,4 +1,4 @@
-@import "Formules.scss";
+@import "_Set";
 
 .footer {
   width: 100%;  
@@ -17,15 +17,20 @@
     font-size: $size_15;
 
     img, svg {
-      @include size(25px,25px)
+      @include size(25px,25px);
     }
   }
 }
 
-@media screen and (min-width: 1023px)  { /* for desktop */ 
+@media screen and (min-width: 1024px)  { /* for desktop */ 
   
   footer {
-    font-size: $size_15 + 10; 
+    @include margin(25px,0,0,0);
+    font-size: $size_20; 
+
+    .container  {
+      @include margin(25px,0,0,0);
+    }
 
     img, svg {
       @include size(30px,30px);
@@ -48,4 +53,4 @@
 
 
 
-/*FINI*/
+/*Validée*/

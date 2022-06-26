@@ -1,4 +1,4 @@
-@import "Formules.scss";
+@import "_Set";
 
 #logo {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -17,14 +17,13 @@
 }
 
 #button {
-  color: $red;
-  border-color: $yellow;
+  @include backG_Ft_border_color (none,$red,$yellow);
   border-radius: $size_10 ;
 }
 
 /* NAVBAR CONTACT PAGE */
 #home {
-  font-size: 22px;
+  font-size: $size_20 + 2;
   text-decoration: none;
 }
 
@@ -54,7 +53,7 @@
 
   #navbar_content {
     a:hover {
-      @include bg_fcolor (#000, $yellow);
+      @include backG_Ft_border_color (#000, $yellow, none);
     }
   }
 
@@ -62,10 +61,10 @@
     justify-content: center;
     
     .nav-item {
-      margin: 10px;
+      font-size: $size_15; 
+      @include margin(10px,10px,10px,10px);
       width: 17vw;  
       max-width: 130px;
-      font-size: $size_15; 
     }   
     #dropdown_archives {
       width: 17vw;  
@@ -74,7 +73,7 @@
   }
 }
 
-  /* for desktops */
+  /* FOR DESKTOPS */
   
 @media screen and (min-width: 1024px) {
   #Nav {
@@ -82,12 +81,11 @@
   }
 
   #sidebar .list-unstyled a:hover {
-    @include bg_fcolor (#000, $yellow);
-      
+    @include backG_Ft_border_color (#000, $yellow, none);  
   }
 
   .menu_nav {
-    background: rgb(187, 178, 178);
+    background: $lgray;
     border: $border_black_5;
     @include margin (0,0,10px,5px);
     
@@ -96,13 +94,14 @@
         text-align: center ;
     }
 
-    li {
-        padding: 20px;  
+    .nav-item {
+      @include padding(40px,20px,20px,20px);  
+      line-height: 60px;
     }
 
     .list-unstyled > li > a {
       @include dark_shadow-txt_w;
-      font-size: 25px; 
+      font-size: $size_20 + 5; 
     } 
 
     #dropdown_menu_archives {
@@ -110,16 +109,15 @@
       @include margin(10px,0,10px,auto);
       font-size: 20px;
     }  
-
   }
 
   .menu_footer {
-    margin-top: 80px;
+    @include margin(80px,0,0,0);
 
     .col {
-      padding-bottom: 50px ;
+      @include padding(0,50px,0,0);
     }
   }
 }
   
-/*FINI*/
+/*Validée*/
