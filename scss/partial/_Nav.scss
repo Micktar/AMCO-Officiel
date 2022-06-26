@@ -106,8 +106,8 @@
 
     #dropdown_menu_archives {
       @include dark_shadow-txt_w;
-      font-size: $size_20 + 3; 
-      transform: translate3d(45px, 110px, 0)!important;
+      @include margin(10px,0,10px,auto);
+      font-size: 20px;
     }  
   }
 
