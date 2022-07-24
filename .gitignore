@@ -1,2 +1,4 @@
-/Style/node_modules/
-/dart-sass/
+dart-sass
+
+*.json
+qq

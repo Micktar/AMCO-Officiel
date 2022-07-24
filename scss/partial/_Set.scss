@@ -1,3 +1,4 @@
+$black: #000;
 $red: #ff0000 ;
 $lgray: #d3d3d3a8;
 $gray: #5c5a5a;
@@ -5,6 +6,7 @@ $white: #ffffff;
 $yellow: #ffff00;
 $orange: #fc8702;
 $sky_blue: #00b7ff;
+$green_light: #b5bfb5;
 
 
 $yellow_lighten: lighten(#fff000, 45%);
@@ -18,17 +20,18 @@ $size_15: 15px;
 $size_20: 20px;
 
 $border_black_1: 1px solid #000;
-$border_black_2: 2px solid #000;
+$border_black_2: 2px dotted #000;
 $border_black_3: 3px solid #000;
 $border_black_5: 5px solid #000;
 
 
-@mixin bg_fcolor ($color1, $color2) {
-  background: $color1;
-  color: $color2;
+@mixin backG_Ft_border_color ($color_b, $color_f, $color_bc) {
+  background: $color_b;
+  color: $color_f;
+  border-color: $color_bc;
 }
 
-@mixin align_weight {
+@mixin alignC_weightB {
   text-align: center;
   font-weight: bold;
 }
@@ -63,14 +66,13 @@ $border_black_5: 5px solid #000;
   padding: $size_5;
 }
 
-
-
 @mixin dark_shadow-txt_w {
   font-family: 'Gloria Hallelujah', cursive;
   background: lighten(#000000, 30%);
   box-shadow:  0 0.8em .6em darken($black, 0.9%);
   color: white ;
 }
+
 
 
 
