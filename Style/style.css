@@ -11954,6 +11954,7 @@ h5, .h5 {
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
+    max-width: 2000px;
   }
   footer img, footer svg {
     width: 30px;
@@ -11976,7 +11977,6 @@ h5, .h5 {
     font-size: 15px;
   }
 }
-/*Validée*/
 /*Settings Mobile First*/
 html, body {
   font-size: 10px;
