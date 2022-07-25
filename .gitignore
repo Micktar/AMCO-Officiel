@@ -5,4 +5,4 @@
 *.json
 
 # ignore le dossier bootstrap
-/scss/node_modules/
+*node_modules
