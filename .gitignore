@@ -1,5 +1,8 @@
-/dart-sass/
-/scss/node_modules
-/.stylelintrc.json
-/package-lock.json
-/package.json
+# ignore le dossier dart-sass
+/dart-sass
+
+#ignore tous les fichiers paramétrage Json
+*.json
+
+# ignore le dossier bootstrap
+*node_modules
