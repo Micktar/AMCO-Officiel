@@ -1,4 +1,8 @@
-dart-sass
+# ignore le dossier dart-sass
+/dart-sass
 
+#ignore tous les fichiers paramétrage Json
 *.json
-qq
+
+# ignore le dossier bootstrap
+/scss/node_modules/
