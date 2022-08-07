@@ -11239,8 +11239,9 @@ textarea.form-control-lg {
     color: white;
     margin-top: 10px;
     margin-bottom: 0;
-    margin-left: 20px;
-    margin-right: 0;
+    margin-left: 10px;
+    margin-right: auto;
+    font-size: 20px;
   }
   .menu_nav #dropdown_menu_archives a {
     font-size: 20px;

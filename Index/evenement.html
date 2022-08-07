@@ -223,25 +223,25 @@
                         <div class="modal-body">
                           <form>
                             <div class="form-group">
-                              <label for="pilot_name">Nom</label>
-                              <input type="text" class="form-control" name="name" id="pilot_name" placeholder="Dupont">
+                              <label for="name">Nom</label>
+                              <input type="text" class="form-control" id="pilot_name" name="name" placeholder="Dupont">
                             </div>
                             <div class="form-group">
-                              <label for="pilot_surname">Prénom</label>
-                              <input type="text" class="form-control" name="surname" id="pilot_surname" placeholder="François">
+                              <label for="surname">Prénom</label>
+                              <input type="text" class="form-control" id="pilot_surname" name="surname" placeholder="François">
                             </div>
                             <div class="form-group">
-                              <label for="email_pilot" class="form-label">Adresse e-mail</label>
-                              <div class="input-group">
-                                <span class="input-group-text">@</span>
-                                <input type="email" class="form-control" aria-describedby="email_pilot" id="email_pilot" required placeholder="françois_dupont@moto.fr">
+                              <label for="mail" class="form-label">Adresse e-mail</label>
+                              <div class="input-group has-validation">
+                                <span class="input-group-text" id="input_pilot_group">@</span>
+                                <input type="text" class="form-control" id="pilot_mail" aria-describedby="inputGroupPrepend" required   placeholder="françois_dupont@moto.fr">
                                 <div class="invalid-feedback">
                                   Veuillez rentrer une adresse mail valide
                                 </div>
                               </div>
                             </div>
                             <div class="form-group">
-                            <label for="pilot_message">Message</label>
+                            <label for="message">Message</label>
                             <textarea class="form-control" name="message" id="pilot_message" rows="3"></textarea>
                             </div>
                           </form>
