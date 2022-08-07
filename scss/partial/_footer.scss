@@ -30,6 +30,7 @@
 
     .container  {
       @include margin(25px,0,0,0);
+      max-width: 2000px;  
     }
 
     img, svg {
@@ -53,4 +54,3 @@
 
 
 
-/*Validée*/

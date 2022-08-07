@@ -27,9 +27,9 @@
   text-decoration: none;
 }
 
-/*RESPONSIVE*/
+/* RESPONSIVE */
 
-/*only mobile*/
+/* only mobile */
 @media screen and (max-width: 575px) {  
   .second_banniere, #sidebar {
     display: none;
@@ -37,7 +37,7 @@
 }
 
 
-/*for tablette or landscape min*/
+/* for tablette or landscape min */
 @media screen and (min-width: 576px) { 
   .first_banniere,
   #logo, .bi-house-door, .bi-calendar3-event, .bi-bicycle, .bi-images, .bi-archive {
@@ -97,11 +97,11 @@
     .nav-item {
       @include padding(40px,20px,20px,20px);  
       line-height: 60px;
+      font-size: $size_20 + 5;
     }
 
-    .list-unstyled > li > a {
+    li > a {
       @include dark_shadow-txt_w;
-      font-size: $size_20 + 5; 
     } 
 
     #dropdown_menu_archives {
@@ -109,6 +109,11 @@
       @include margin(10px,0,10px,auto);
       font-size: 20px;
     }  
+
+    #dropdown_menu_archives a {
+      font-size: 20px;
+      color: $white;
+    }
   }
 
   .menu_footer {
@@ -119,5 +124,3 @@
     }
   }
 }
-  
-/*Validée*/
