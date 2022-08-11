@@ -6,3 +6,5 @@
 
 #ignore tous les fichiers paramétrage Json
 *.json
+
+/.bash_profile
