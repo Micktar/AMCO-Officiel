@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Retrouvez toute l'actualité et les différentes informations de l'Amicale Motos Cyclos Occitanie. Une association de Moto-cross et Vélo basée dans l'Ariège"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap">
   <link rel="stylesheet" href="/Style/style.css">
   <title>Amicale Motos Cyclos Occitanie</title>
-  <meta name="description" content="Retrouvez toute l'actualité et les différentes informations de l'Amicale Motos Cyclos Occitanie. Une association de Moto-cross et Vélo basée dans l'Ariège"/>
 </head>
 <body class="d-flex flex-column">
-  <div class="content" id="content">
+  <div class="content">
     <header>
       <div class="first_banniere">
         <img src="../Annexe/Images/Bannière.jpg" alt="responsive bannière" class="img-fluid" id="bannière_mobile">
@@ -73,9 +73,9 @@
       </div>
     </nav>
     <!--Menu latéral-->
-    <div class="menu_nav" id="sidebar">  
+    <div class="menu_nav" >  
       <div class="container">
-        <h2 class="text-center">Menu</h2>
+        <a class="navbar-brand text-warning" id="sidebar">Menu</a>
         <ul class="list-unstyled mt-5">
             <li class="nav-item ">
               <a class="nav-link active disabled text-warning" aria-current="page" href="#">
@@ -108,12 +108,16 @@
               </a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewbox="0 0 16 16">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-archive" viewbox="0 0 16 16">
                 <path d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1V2zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5H2zm13-3H1v2h14V2zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
                 </svg> Archives</a>
                 <ul class="dropdown-menu pt-0" id="dropdown_menu_archives">
-                  <li><a class="dropdown-item" href="/AMCO/Archives/2016-2018.html">2016 - 2018</a></li>
-                  <li><a class="dropdown-item" href="/AMCO/Archives/2011-2015.html">2011 - 2015</a></li>
+                  <li>
+                    <a class="dropdown-item" href="/AMCO/Archives/2016-2018.html">2016 - 2018</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/AMCO/Archives/2011-2015.html">2011 - 2015</a>
+                  </li>
                 </ul>
             </li>
         </ul>
@@ -155,7 +159,7 @@
             <!--event article-->
             <div class="row">  
               <div class="col">
-                <section class="event_article ">
+                <section class="event_article">
                   <div class="card">
                     <h2 class="card-header p-1">
                       <img src="http://ageheureux.a.g.pic.centerblog.net/anniversaire_010.gif" width="35" height="40" alt="Image du Blog ageheureux.centerblog.net">
@@ -163,7 +167,7 @@
                       <img src="http://ageheureux.a.g.pic.centerblog.net/anniversaire_010.gif" width="35" height="40" alt="Image du Blog ageheureux.centerblog.net">
                     </h2>
                     <div class="card-body">
-                      <h6 class="card-title w-50">Rencontre sportive</h6>
+                      <h3 class="card-title">Rencontre sportive</h3>
                       <p class="card-text mb-0 mt-3">L'Amicale Moto Cyclo Occitanie organise un grand évènement en <u><strong>Juillet 2023</strong></u> et l'ensemble de l'équipe du club vous invite à nous rejoindre pour ce moment à la fois sportif et festif.
                       </p>
                       <p class="card-text text-center mt-3 ">
@@ -183,7 +187,7 @@
                   <div class="card">
                     <h2 class="card-header">Information générale</h2>
                     <div class="card-body">
-                      <p class="card-text">Suite à la double affilation du club (UFOLEP + FFM) et à l'augmentation de 
+                      <p class="card-text text-center">Suite à la double affilation du club (UFOLEP + FFM) et à l'augmentation de 
                         l'affiliation FFM. </p>
                       <p class="adhésion text-center"><strong>L'Adhésion au Club est passée à 20 €
                       </strong></p>

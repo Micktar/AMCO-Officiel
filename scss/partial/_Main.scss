@@ -1,7 +1,6 @@
 @import "_Set";
 
-
-/*Settings Mobile First*/
+/*SETTINGS MOBILE FIRST*/
 
 /*GENERAL*/
 article {
@@ -28,8 +27,6 @@ section {
   .card-text {
     text-align: justify;
   }
-
-  
 }
 
 /*HOME*/
@@ -48,9 +45,9 @@ section {
 
 .general_information .adhésion {
   text-decoration: underline;
-  color: red;
+  color: $red;
   font-size: $size_13;
-}
+} 
 
 /*EVENT*/
 
@@ -201,7 +198,7 @@ section {
 /*RESPONSIVE*/
 
 @media screen and (min-width: 576px) and (max-width: 1023px) { /* for tablette & landscape */  
-/*GENERAL*/
+
 article {
   max-width: 600px;
 } 
@@ -210,18 +207,10 @@ article {
   line-height: $size_10 * 3; 
 }
 
-
 /*HOME*/
-.event_article {
-  img {
+.event_article  img {
     @include size(40px, 45px);
   }
-
-  .card-header {
-    font-size: $size_10 * 3;
-  }
-}
-
 
 /*EVENT*/
 
@@ -261,7 +250,7 @@ article {
 
 /*CONTACT*/
   .needs-validation {
-    @include size(400px, 620px);
+    @include size(400px, 650px);
     
     div {
      @include padding (10px,0,0,0);
@@ -276,7 +265,7 @@ article {
 
 /* FOR DESKTOP */ 
 
-@media screen and (min-width: 1024px)  { 
+@media screen and (min-width: 1024px) { 
 
 /*GENERAL*/
   article {
@@ -318,9 +307,6 @@ article {
       @include size(55px, 55px);
     }
 
-    .card-header {
-      font-size: $size_10 * 3;
-    }
     .card-body {
       @include padding (15px,10px,0,0); 
     }
@@ -374,16 +360,13 @@ article {
   /*CLUB*/
   .statuts_club li {
     max-width: 450px;
-  
     p {
       font-size: $size_20;
       @include padding (0,0,20px,0);
-
     }
   }
 
   /* PICTURES */ 
-
   .pictures {
     .wrapper {
       @include margin(100px,0,0,0);
@@ -400,7 +383,8 @@ article {
   /*Form*/
   .needs-validation {
     font-size: $size_20;
-    @include size(600px,700px);
+    @include margin(30px,0,auto,auto);
+    @include size(600px,750px);
     
     ::placeholder {
       font-size: $size_15;

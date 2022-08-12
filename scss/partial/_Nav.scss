@@ -31,7 +31,7 @@
 
 /* only mobile */
 @media screen and (max-width: 575px) {  
-  .second_banniere, #sidebar {
+  .second_banniere, .menu_nav {
     display: none;
   }
 }
@@ -47,7 +47,7 @@
 
  /*for tablette and landscape*/
 @media screen and (min-width: 576px) and (max-width: 1023px) {
-  #sidebar {
+  .menu_nav {
     display: none;
   }
 
@@ -80,47 +80,60 @@
     display: none; 
   }
 
-  #sidebar .list-unstyled a:hover {
-    @include backG_Ft_border_color (#000, $yellow, none);  
-  }
-
-  .menu_nav {
+  .menu_nav {   /*Sidebar menu*/
     background: $lgray;
     border: $border_black_5;
     @include margin (0,0,10px,5px);
     
     .container {
         height: 100%;
-        text-align: center ;
+        text-align: center;
     }
 
+    .list-unstyled a:hover {
+      background: #000;
+      color: #ffff00;
+      border-color: none;
+    }
     .nav-item {
       @include padding(40px,20px,20px,20px);  
       line-height: 60px;
       font-size: $size_20 + 5;
     }
 
-    li > a {
+    .nav-item a {
       @include dark_shadow-txt_w;
-    } 
-
+    }
+    
     #dropdown_menu_archives {
       @include dark_shadow-txt_w;
       @include margin(10px,0,10px,auto);
       font-size: 20px;
+      min-width: 15rem;
     }  
-
-    #dropdown_menu_archives a {
-      font-size: 20px;
-      color: $white;
-    }
   }
 
   .menu_footer {
-    @include margin(80px,0,0,0);
+    @include margin(150px,0,0,0);
 
     .col {
       @include padding(0,50px,0,0);
+    }
+  }
+}
+
+@media screen and (min-width: 2000px) {  
+  #dropdown_menu_archives a {
+    min-width: 25rem;
+    text-align: center;
+  }
+
+  .menu_footer .row {
+    width: 250px;
+    @include mp-auto;
+
+    .col img {
+      @include size(150px,120px);
     }
   }
 }
