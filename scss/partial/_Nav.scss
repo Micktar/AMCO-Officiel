@@ -1,7 +1,7 @@
 @import "_Set";
 
 #logo {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Pacifico', cursive;
 }
 
 #navbar_content li {
@@ -54,6 +54,7 @@
   #navbar_content {
     a:hover {
       @include backG_Ft_border_color (#000, $yellow, none);
+      border-radius: 20px;
     }
   }
 
@@ -61,15 +62,21 @@
     justify-content: center;
     
     .nav-item {
+      border-radius: 20px;
       font-size: $size_15; 
       @include margin(10px,10px,10px,10px);
-      width: 17vw;  
-      max-width: 130px;
+      min-width: 19vw;
     }   
+
     #dropdown_archives {
-      width: 17vw;  
-      max-width: 130px;
+      border-radius: 20px;
+      @include margin(10px,10px,0px,0px);
+      min-width: 19vw; 
     }   
+  
+    .dropdown-item {    
+      @include padding(10px,10px,0px,0px);
+    }
   }
 }
 
@@ -85,6 +92,7 @@
     border: $border_black_5;
     @include margin (0,0,10px,5px);
     
+    
     .container {
         height: 100%;
         text-align: center;
@@ -95,6 +103,7 @@
       color: #ffff00;
       border-color: none;
     }
+    
     .nav-item {
       @include padding(40px,20px,20px,20px);  
       line-height: 60px;
@@ -102,12 +111,22 @@
     }
 
     .nav-item a {
+      border-radius: 20px;
       @include dark_shadow-txt_w;
     }
-    
-    #dropdown_menu_archives {
+
+    .dropdown-menu {
+      text-align: center;
+      border: none; 
+      transform: translate3d(20px, 110px, 0px) !important; /*!important afin de forcer le translate en dessous du "li archives" sinon il se positionne automatiquement au dessus.
+      la valeur élément du Css est inline et par défault sans possibilité de le modifier*/
+      
+    }
+
+    #dropdown_menu_archives li {
+      border-radius: 20px;
       @include dark_shadow-txt_w;
-      @include margin(10px,0,10px,auto);
+      @include margin(20px,0,10px,auto);
       font-size: 20px;
       min-width: 15rem;
     }  
@@ -131,9 +150,5 @@
   .menu_footer .row {
     width: 250px;
     @include mp-auto;
-
-    .col img {
-      @include size(150px,120px);
-    }
   }
 }

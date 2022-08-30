@@ -8,8 +8,9 @@ h1 {
 }
 
 h2 { /*Card-header*/
+  font-family: 'Pacifico', cursive;
   font-size: 1.4rem;
-  @include alignC_weightB;
+  text-align: center;
 }
 
 .event_article {
@@ -27,6 +28,7 @@ h2 { /*Card-header*/
 }
 
 .event_description  .card-header { /*title h2 first article on Event page*/
+  font-size: large;
     font-size: 1.7rem;
   }
 

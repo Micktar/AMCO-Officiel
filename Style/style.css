@@ -3458,7 +3458,6 @@ textarea.form-control-lg {
   min-width: 10rem;
   padding: 0.5rem 0;
   margin: 0;
-  font-size: 1rem;
   text-align: left;
   list-style: none;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -11105,7 +11104,7 @@ textarea.form-control-lg {
   }
 }
 #logo {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Pacifico", cursive;
 }
 
 #navbar_content li {
@@ -11161,23 +11160,34 @@ textarea.form-control-lg {
     background: #000;
     color: #ffff00;
     border-color: none;
+    border-radius: 20px;
   }
 
   #navbar_content {
     justify-content: center;
   }
   #navbar_content .nav-item {
+    border-radius: 20px;
     font-size: 15px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    width: 17vw;
-    max-width: 130px;
+    min-width: 19vw;
   }
   #navbar_content #dropdown_archives {
-    width: 17vw;
-    max-width: 130px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    min-width: 19vw;
+  }
+  #navbar_content .dropdown-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 /* FOR DESKTOPS */
@@ -11213,17 +11223,26 @@ textarea.form-control-lg {
     font-size: 25px;
   }
   .menu_nav .nav-item a {
+    border-radius: 20px;
     font-family: "Gloria Hallelujah", cursive;
     background: #4d4d4d;
     box-shadow: 0 0.8em 0.6em black;
     color: white;
   }
-  .menu_nav #dropdown_menu_archives {
+  .menu_nav .dropdown-menu {
+    text-align: center;
+    border: none;
+    transform: translate3d(20px, 110px, 0px) !important;
+    /*!important afin de forcer le translate en dessous du "li archives" sinon il se positionne automatiquement au dessus.
+    la valeur élément du Css est inline et par défault sans possibilité de le modifier*/
+  }
+  .menu_nav #dropdown_menu_archives li {
+    border-radius: 20px;
     font-family: "Gloria Hallelujah", cursive;
     background: #4d4d4d;
     box-shadow: 0 0.8em 0.6em black;
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 0;
     margin-left: 10px;
     margin-right: auto;
@@ -11254,10 +11273,6 @@ textarea.form-control-lg {
     width: 250px;
     margin-left: auto;
     margin-right: auto;
-  }
-  .menu_footer .row .col img {
-    width: 150px;
-    height: 120px;
   }
 }
 /*SETTINGS MOBILE FIRST*/
@@ -11309,6 +11324,7 @@ section {
   text-decoration: underline;
   color: #ff0000;
   font-size: 13px;
+  font-weight: bold;
 }
 
 /*EVENT*/
@@ -11415,21 +11431,42 @@ section {
 }
 
 /* PICTURES */
-.pictures .wrapper {
-  margin-top: 30vw;
+.pictures {
+  margin-top: 0;
   margin-bottom: 0;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
-.pictures section {
-  height: 100%;
-  background: none;
+
+#first_slideshow, #second_slideshow {
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-left: auto;
+  padding-right: auto;
+  border: 1px solid black;
 }
-.pictures p {
-  font-size: 30px;
-  background: white;
-  color: #000;
-  font-weight: bold;
+#first_slideshow img, #second_slideshow img {
+  max-width: 330px;
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-item {
+  margin-bottom: 30px;
+  /*transition-delay: 5s;*/
+}
+
+.sr-only {
+  line-height: 20px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  opacity: 1;
+  color: #e90303;
+  align-items: flex-end;
+  justify-content: center;
+  width: 70%;
 }
 
 /* ARCHIVES*/
@@ -11648,21 +11685,6 @@ section {
     padding-right: 0;
   }
 
-  /* PICTURES */
-  .pictures .wrapper {
-    margin-top: 100px;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .pictures p {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    font-size: 40px;
-  }
-
   /*CONTACT PAGE*/
   /*Form*/
   .needs-validation {
@@ -11699,9 +11721,9 @@ h1, .h1 {
 
 h2, .h2 {
   /*Card-header*/
+  font-family: "Pacifico", cursive;
   font-size: 1.4rem;
   text-align: center;
-  font-weight: bold;
 }
 
 .event_article h2, .event_article .h2 {
@@ -11719,6 +11741,7 @@ h2, .h2 {
 
 .event_description .card-header {
   /*title h2 first article on Event page*/
+  font-size: large;
   font-size: 1.7rem;
 }
 
@@ -12039,10 +12062,6 @@ html, body {
 
 main {
   min-height: 850px;
-}
-
-.wrapper {
-  margin-top: 30px;
 }
 
 /*RESPONSIVE*/

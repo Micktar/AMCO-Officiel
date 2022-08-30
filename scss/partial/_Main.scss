@@ -47,6 +47,7 @@ section {
   text-decoration: underline;
   color: $red;
   font-size: $size_13;
+  font-weight: bold;
 } 
 
 /*EVENT*/
@@ -143,21 +144,35 @@ section {
 /* PICTURES */ 
 
 .pictures {
-  .wrapper {
-    @include margin(30vw,0,0,0);   
-  }
+  @include margin(0, 0, 10px, 10px);
+}
+
+#first_slideshow, #second_slideshow {
+  @include padding(0, 10px, auto, auto);
+  border: 1px solid black;
+  img {
+    max-width: 330px;
+    max-height: 400px;
+    @include mp-auto;
+  }  
+}
+
+.carousel-item {
+  margin-bottom: 30px;
+  /*transition-delay: 5s;*/
+}
+
+.sr-only{
+  line-height: 20px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  opacity: 1;
+  color: #e90303;
+  align-items: flex-end;
+  justify-content: center;
+  width: 70%;
   
-  section {
-    height: 100%;
-    background: none;
-  }
-  
-  p {
-    font-size: $size_10 * 3;
-    background: white;
-    color: $black;
-    font-weight: bold;
-  }
 }
 
 /* ARCHIVES*/
@@ -366,18 +381,7 @@ article {
     }
   }
 
-  /* PICTURES */ 
-  .pictures {
-    .wrapper {
-      @include margin(100px,0,0,0);
-    }
-    
-    p {
-      @include margin(0,0,0,0);
-      font-size: $size_10 * 4;    
-    }
-  }
-
+ 
   /*CONTACT PAGE*/
 
   /*Form*/
