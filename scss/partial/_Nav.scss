@@ -117,6 +117,7 @@
 
     .dropdown-menu {
       text-align: center;
+      --bs-dropdown-bg: none;
       border: none; 
       transform: translate3d(20px, 110px, 0px) !important; /*!important afin de forcer le translate en dessous du "li archives" sinon il se positionne automatiquement au dessus.
       la valeur élément du Css est inline et par défault sans possibilité de le modifier*/

@@ -7,10 +7,15 @@ h1 {
   @include alignC_weightB;
 }
 
+.accueil h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 h2 { /*Card-header*/
-  font-family: 'Pacifico', cursive;
+  font-family: 'Caveat', cursive;
   font-size: 1.4rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .event_article {
@@ -145,8 +150,6 @@ h4 {
   .archives .card-title {
     font-size: 2rem;
   }
-
-
 }
 
 
