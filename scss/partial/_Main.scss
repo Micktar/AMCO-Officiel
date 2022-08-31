@@ -144,24 +144,32 @@ section {
 /* PICTURES */ 
 
 .pictures {
+
+  h2 {
+    color: red;
+    margin-bottom: 10px
+  }
+  .carousel-item img {
+    @include mp-auto;
+  }
+
   @include margin(0, 0, 10px, 10px);
 }
 
-#sainte_suzanne_2011, #second_slideshow {
+#sainte_suzanne_2011 {
   padding-bottom: 10px;
 }
 
 .carousel {
   .carousel-control-prev, .carousel-control-next {
     position:relative ;
-    
     margin-top: 10px;
     font-size: 10px;
-    color: rgb(167, 24, 24);
+    font-weight: bold;
+    color: rgb(255, 255, 255);
     width: 80px;
     opacity: 1;
     transition: opacity 0.35s ease;
-    font-weight: bold;
   }
 }
 
@@ -204,7 +212,7 @@ section {
   font-size: 8px;
 }
 
-
+/*---------------------------------------------------------------------------------------*/
 /*RESPONSIVE*/
 
 @media screen and (min-width: 576px) and (max-width: 1023px) { /* for tablette & landscape */  
@@ -262,10 +270,17 @@ article {
 
  .pictures {
   img {
-    max-width: 700px;
+    max-width: 600px;
     @include mp-auto;
   }
 }
+  .carousel {
+    .carousel-control-prev, .carousel-control-next {
+    font-size: 15px;
+    width: 200px;
+    }
+  }
+
 
 
 /*CONTACT*/
@@ -282,7 +297,7 @@ article {
   }
 }
 
-
+/*---------------------------------------------------------------------------------------*/
 /* FOR DESKTOP */ 
 
 @media screen and (min-width: 1024px) { 
@@ -331,6 +346,7 @@ article {
       @include padding (15px,10px,0,0); 
     }
   }
+
 
    /* EVENT */
 
@@ -385,6 +401,12 @@ article {
   }
 }
 
+.carousel {
+  .carousel-control-prev, .carousel-control-next {
+  font-size: 20px;
+  width: 200px;
+  }
+}
   
 
   /*CLUB*/
