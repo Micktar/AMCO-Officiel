@@ -145,6 +145,10 @@ section {
 
 .pictures {
 
+  .carousel-2011  {
+    padding: 0;
+  }
+
   h2 {
     color: red;
     margin-bottom: 10px
@@ -154,10 +158,6 @@ section {
   }
 
   @include margin(0, 0, 10px, 10px);
-}
-
-#sainte_suzanne_2011 {
-  padding-bottom: 10px;
 }
 
 .carousel {
