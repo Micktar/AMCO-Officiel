@@ -11328,6 +11328,10 @@ section {
   font-weight: bold;
 }
 
+#FFm2022 {
+  size: 500px;
+}
+
 /*EVENT*/
 /*E-mail Event juillet 2025*/
 .event_description .card-text a {
@@ -11607,7 +11611,7 @@ section {
   }
 
   .card-footer {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   /* HOME */
