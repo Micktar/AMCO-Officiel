@@ -11321,6 +11321,12 @@ section {
   font-family: "Gloria Hallelujah";
 }
 
+#ag_date {
+  font-size: 12px;
+  color: #11d928;
+  text-align: center;
+}
+
 .general_information .adhésion {
   text-decoration: underline;
   color: #ff0000;
