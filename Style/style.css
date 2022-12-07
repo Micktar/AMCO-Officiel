@@ -11321,7 +11321,13 @@ section {
   font-family: "Gloria Hallelujah";
 }
 
-#ag_date {
+.AG_2022 #OrdreDuJour {
+  font-weight: bold;
+}
+.AG_2022 ul {
+  text-decoration: underline;
+}
+.AG_2022 #ag_date {
   font-size: 12px;
   color: #11d928;
   text-align: center;
@@ -11623,6 +11629,10 @@ section {
   /* HOME */
   .accueil section {
     margin: 50px;
+  }
+
+  .AG_2022 #ag_date {
+    font-size: 20px;
   }
 
   .general_information .card-text {

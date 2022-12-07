@@ -43,11 +43,21 @@ section {
   font-family: 'Gloria Hallelujah';
 }
 
-#ag_date {
-  font-size: 12px;
-  color: rgb(17, 217, 40);
-  text-align: center;
+.AG_2022 {
+  #OrdreDuJour {
+    font-weight: bold;
+  }
+  ul {
+    text-decoration: underline;
+  }
+  #ag_date {
+    font-size: 12px;
+    color: rgb(17, 217, 40);
+    text-align: center;
+  }
 }
+
+
 
 .general_information .adhésion {
   text-decoration: underline;
@@ -336,6 +346,13 @@ article {
 
   .accueil section {
     margin: $size_10 * 5;
+  }
+
+  .AG_2022 {
+    
+    #ag_date {
+      font-size: $size_20;
+    }
   }
 
   .general_information  {
