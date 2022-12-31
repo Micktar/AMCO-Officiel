@@ -109,7 +109,7 @@ h4 {
 /* FOR DESKTOP */ 
 @media screen and (min-width: 1024px) { 
   h1 {
-    font-size: 5rem;
+    font-size: 10rem;
     @include margin(-0.8vw,0,0,0);
   }
 
@@ -123,16 +123,8 @@ h4 {
     }
   }
 
-  .event_description  .card-header { /*title h2 first article on Event page*/
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2.7rem;
-  }
-
   #sidebar { 
-    font-size: 5rem;
+    font-size: 7rem;
     font-family: 'Gloria Hallelujah', cursive;
     @include margin(30px,0,0,0);
     @include padding(0,100px,0,0);
@@ -150,6 +142,11 @@ h4 {
   .archives .card-title {
     font-size: 2rem;
   }
+
+  h2 {
+    font-size: 5rem;
+  }
+
 }
 
 

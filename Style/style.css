@@ -11321,6 +11321,10 @@ section {
   font-family: "Gloria Hallelujah";
 }
 
+.new_year > .card > .card-body img {
+  width: 70%;
+}
+
 .AG_2022 #OrdreDuJour {
   font-weight: bold;
 }
@@ -11603,7 +11607,7 @@ section {
 @media screen and (min-width: 1024px) {
   /*GENERAL*/
   article {
-    max-width: 800px;
+    max-width: 1000px;
   }
 
   section .card-body {
@@ -11704,15 +11708,19 @@ section {
   }
 
   /*PICTURES*/
+  .pictures article {
+    margin-top: 100px;
+  }
   .pictures img {
-    max-width: 700px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .carousel .carousel-control-prev, .carousel .carousel-control-next {
-    font-size: 20px;
-    width: 200px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    width: 300px;
   }
 
   /*CLUB*/
@@ -11877,7 +11885,7 @@ h4, .h4 {
 /* FOR DESKTOP */
 @media screen and (min-width: 1024px) {
   h1, .h1 {
-    font-size: 5rem;
+    font-size: 10rem;
     margin-top: -0.8vw;
     margin-bottom: 0;
     margin-left: 0;
@@ -11893,17 +11901,8 @@ h4, .h4 {
     font-size: 2.5rem;
   }
 
-  .event_description .card-header {
-    /*title h2 first article on Event page*/
-    font-size: 3rem;
-  }
-
-  h2, .h2 {
-    font-size: 2.7rem;
-  }
-
   #sidebar {
-    font-size: 5rem;
+    font-size: 7rem;
     font-family: "Gloria Hallelujah", cursive;
     margin-top: 30px;
     margin-bottom: 0;
@@ -11931,6 +11930,10 @@ h4, .h4 {
 
   .archives .card-title {
     font-size: 2rem;
+  }
+
+  h2, .h2 {
+    font-size: 5rem;
   }
 }
 /*Event*/

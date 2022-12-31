@@ -43,6 +43,12 @@ section {
   font-family: 'Gloria Hallelujah';
 }
 
+.new_year > .card > .card-body {
+  img {
+    width: 70%;
+  }
+}
+
 .AG_2022 {
   #OrdreDuJour {
     font-weight: bold;
@@ -325,7 +331,7 @@ article {
 
 /*GENERAL*/
   article {
-    max-width: 800px;
+    max-width: 1000px;
   } 
 
   section .card-body {
@@ -423,16 +429,22 @@ article {
   /*PICTURES*/
 
 .pictures {
+
+  article {
+    margin-top: 100px;
+  }
+
   img {
-    max-width: 700px;
+    max-width: 1024px;
     @include mp-auto;
   }
 }
 
 .carousel {
   .carousel-control-prev, .carousel-control-next {
-  font-size: 20px;
-  width: 200px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    width: 300px;
   }
 }
   
@@ -469,6 +481,4 @@ article {
     }
   }
 }
-
-
 
